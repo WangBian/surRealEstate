@@ -1,30 +1,34 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container justify-content-center align-items-center">
-        <a href="#" class="navbar-brand">SurRealEstate</a>
+<nav class="navbar navbar-expand-lg navbar-dark at-top" style="background-color: rgba(6, 53, 14, 0.904);">
+    <a href="#" class="navbar-brand">SurRealEstate</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TOOLS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PROPERTIES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT ME</a>
-                </li>
-            </ul>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#home" (click)="onSelect('home')">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tools" (click)="onSelect('tools')">TOOLS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#properties" (click)="onSelect('properties')">PROPERTIES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#journals" (click)="onSelect('journals')">JOURNALS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#playgrounds" (click)="onSelect('playgrouds')">PLAYGROUNDS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacts" (click)="onSelect('contacts')">CONTACTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about_me" (click)="onSelect('aboutMe')">ABOUT ME</a>
+            </li>
+        </ul>
     </div>
 </nav>
