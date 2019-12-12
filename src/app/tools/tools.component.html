@@ -1,13 +1,29 @@
 <header class="text-center text-secondary p-1">
-    <h1>Real Estate Investment Calculator</h1>
+    <h1>Real Estate Investment Calculators</h1>
 </header>
 
 <div class="row">
     <div class="col-lg-6">
-        <app-rental-property-calc></app-rental-property-calc>
+        <div class="card" style="width: 35rem;">
+            <div class="card-body">
+                <h5 class="card-title text-secondary">Mortgage Payment Calculator</h5>
+                <hr>
+                <p class="card-text text-info">The calculator helps calculate monthly mortgage payment.</p>
+                <a routerLink="/tools/mortgage-payment-calc" routerLinkActive="active" class="btn btn-primary float-right">Calculate</a>
+            </div>
+        </div>
     </div>
 
     <div class="col-lg-6">
-        <app-rental-property-calc></app-rental-property-calc>
+        <div class="card" style="width: 35rem;">
+            <div class="card-body">
+                <h5 class="card-title text-secondary">Rental Property Calculator</h5>
+                <hr>
+                <p class="card-text text-info">The calculator helps analyze rental property investmemnt quickly.</p>
+                <a routerLink="/tools/rental-property-calc" routerLinkActive="active" class="btn btn-primary float-right">Calculate</a>
+            </div>
+        </div>
     </div>
 </div>
+
+<router-outlet></router-outlet>
