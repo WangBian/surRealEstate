@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark at-top" style="background-color: rgba(6, 53, 14, 0.904);">
-    <a href="#" class="navbar-brand">SurRealEstate</a>
+    <a class="navbar-brand" routerLink="/home">SurRealEstate</a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,28 +7,30 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto" routerLinkActive="active">
             <li class="nav-item">
-                <a class="nav-link" href="#home" (click)="onSelect('home')">HOME</a>
+                <a class="nav-link" routerLink="/home">HOME</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#tools" (click)="onSelect('tools')">TOOLS</a>
+                <a class="nav-link" routerLink="/tools">TOOLS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#properties" (click)="onSelect('properties')">PROPERTIES</a>
+                <a class="nav-link" routerLink="/home">PROPERTIES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#journals" (click)="onSelect('journals')">JOURNALS</a>
+                <a class="nav-link" routerLink="/home">JOURNALS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#playgrounds" (click)="onSelect('playgrouds')">PLAYGROUNDS</a>
+                <a class="nav-link" routerLink="/home">PLAYGROUNDS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contacts" (click)="onSelect('contacts')">CONTACTS</a>
+                <a class="nav-link" routerLink="/home">CONTACTS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#about_me" (click)="onSelect('aboutMe')">ABOUT ME</a>
+                <a class="nav-link" routerLink="/home">ABOUT US</a>
             </li>
         </ul>
     </div>
 </nav>
+
+<router-outlet></router-outlet>

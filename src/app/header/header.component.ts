@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +8,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() tabSelected = new EventEmitter<string>();
+  router : Router;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  onSelect(tab: string){
-    this.tabSelected.emit(tab);
+  goHome(){
+    this.router.navigate(['/home']);
   }
 
 }
