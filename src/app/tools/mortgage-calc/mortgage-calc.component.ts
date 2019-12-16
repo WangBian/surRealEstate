@@ -8,7 +8,6 @@ import { NumberSymbol } from '@angular/common';
 })
 export class MortgageCalcComponent implements OnInit {
 
-  showLoading = false;
   showResults = false;
 
   amount: number;
@@ -29,7 +28,6 @@ export class MortgageCalcComponent implements OnInit {
   }
 
   calculatePayment(amount: number, interest: number, years: number, annualTaxes: number, annualInsurance: number) {
-    this.showLoading = true;
 
     this.amount = amount;
     this.interest = interest;
@@ -45,15 +43,18 @@ export class MortgageCalcComponent implements OnInit {
     var monthly = (principal * x * calculatedInterest) / (x - 1);
 
     if (isFinite(monthly)) {
-      this.monthlyPayment = "$ " + monthly.toFixed(2);
-      this.totalPayment = (monthly * calculatedPayments).toFixed(2);
-      this.totalInterest = ((monthly * calculatedPayments) - principal).toFixed(2);
+      this.monthlyPayment = this.toCurrency(monthly.toFixed(2));
+      this.totalPayment = this.toCurrency((monthly * calculatedPayments).toFixed(2));
+      this.totalInterest = this.toCurrency(((monthly * calculatedPayments) - principal).toFixed(2));
     }
 
-    this.monthlyTaxes = (parseFloat(annualTaxes.toString()) / 12).toFixed(2);
-    this.monthlyInsurance = (parseFloat(annualInsurance.toString()) / 12).toFixed(2);
+    this.monthlyTaxes = this.toCurrency((parseFloat(annualTaxes.toString()) / 12).toFixed(2));
+    this.monthlyInsurance = this.toCurrency((parseFloat(annualInsurance.toString()) / 12).toFixed(2));
 
-    this.showLoading = false;
     this.showResults = true;
+  }
+
+  toCurrency(num: string) {
+    return '$ ' + num.replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
   }
 }
