@@ -1,28 +1,33 @@
-<header class="text-center text-secondary p-1">
-    <h1>Real Estate Investment Calculators</h1>
-</header>
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row col-8">
+        <header class="col-12 text-center">
+            <h1>Real Estate Investment Calculators</h1>
+        </header>
 
-<div class="row">
-    <div class="col-lg-6">
-        <div class="card" style="width: 35rem;">
-            <div class="card-body">
-                <h5 class="card-title text-secondary">Mortgage Payment Calculator</h5>
-                <hr>
-                <p class="card-text text-info">The calculator helps calculate monthly mortgage payment.</p>
-                <a routerLink="/tools/mortgage-payment-calc" routerLinkActive="active"
-                    class="btn btn-primary float-right">Calculate</a>
+        <div class="col-6 d-flex mx-auto">
+            <div class="card">
+                <div class="card-body d-flex flex-column ">
+                    <h5 class="card-title text-secondary">Mortgage Calculator</h5>
+                    <div class="col-auto">
+                        <hr>
+                    </div>
+                    <p class="card-text text-info">The calculator helps calculate monthly mortgage payment.</p>
+                    <a routerLink="/tools/mortgage-calc" routerLinkActive="active"
+                        class="btn btn-primary mt-auto ml-auto">Calculate</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="col-lg-6">
-        <div class="card" style="width: 35rem;">
-            <div class="card-body">
-                <h5 class="card-title text-secondary">Rental Property Calculator</h5>
-                <hr>
-                <p class="card-text text-info">The calculator helps analyze rental property investmemnt quickly.</p>
-                <a routerLink="/tools/rental-property-calc"
-                    class="btn btn-primary float-right">Calculate</a>
+        <div class="col-6 d-flex amx-auto">
+            <div class="card">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-secondary">Rental Property Calculator</h5>
+                    <div class="col-auto">
+                        <hr>
+                    </div>
+                    <p class="card-text text-info">The calculator helps analyze rental property investmemnt quickly.</p>
+                    <a routerLink="/tools/rental-property-calc" class="btn btn-primary mt-auto ml-auto">Calculate</a>
+                </div>
             </div>
         </div>
     </div>

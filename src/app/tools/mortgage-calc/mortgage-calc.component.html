@@ -1,1 +1,112 @@
-<p>mortgage-calc works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card card-body text-center mt-5">
+                <h1 class="heading display-5 pb-3">Mortgage Calculator</h1>
+                <form id="loan-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Loan Amount</span>
+                            </div>
+                            <input type="number" id="amount" class="form-control" #inputAmount>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Interest (%)</span>
+                            </div>
+                            <input type="number" step="0.01" id="interest" class="form-control" #inputInterest>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Load Period (years)</span>
+                            </div>
+                            <input type="number" id="years" class="form-control" #inputYears>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Annual Taxes</span>
+                            </div>
+                            <input type="number" id="taxes" class="form-control" #inputTaxes>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Annual Insurance</span>
+                            </div>
+                            <input type="number" id="insurance" class="form-control" #inputInsurance>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary btn-block"
+                            (click)='calculatePayment(inputAmount.value, inputInterest.value, inputYears.value, inputTaxes.value, inputInsurance.value)'>
+                            Calculate </button>
+                    </div>
+                </form>
+
+                <!-- Loader  -->
+                <div id="loading" *ngIf="showLoading">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading Gif"
+                        style="height: 100px;" class="img-fluid">
+                </div>
+
+                <!-- Result  -->
+                <div id="results" class="pt-4" *ngIf="showResults">
+                    <h5>Calculator Results</h5>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Montly Payment</span>
+                            </div>
+                            <input type="string" id="monthly-payment" class="form-control" name=""
+                                value={{monthlyPayment}} disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Total Payment</span>
+                            </div>
+                            <input type="string" id="total-payment" class="form-control" name="" value={{totalPayment}}
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Total Interest</span>
+                            </div>
+                            <input type="string" id="total-interest" class="form-control" name=""
+                                value={{totalInterest}} disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Monthly Taxes</span>
+                            </div>
+                            <input type="string" id="monthly-taxes" class="form-control" name="" value={{monthlyTaxes}}
+                                disabled>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Monthly Insurance</span>
+                            </div>
+                            <input type="string" id="monthly-insurance" class="form-control" name=""
+                                value={{monthlyInsurance}} disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

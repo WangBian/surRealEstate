@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: 'tools/mortgage-payment-calc', component: MortgageCalcComponent },
+  { path: 'tools/mortgage-calc', component: MortgageCalcComponent },
   { path: 'tools/rental-property-calc', component: RentalPropertyCalcComponent },
   { path: 'home', component: HomeComponent },
   { path: 'tools', component: ToolsComponent },
