@@ -9,6 +9,7 @@ import { ToolsComponent } from './tools/tools.component';
 import { RentalPropertyCalcComponent } from './tools/rental-property-calc/rental-property-calc.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PropertiesComponent } from './properties/properties.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     HomeComponent,
     RentalPropertyCalcComponent,
     MortgageCalcComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PropertiesComponent
   ],
   imports: [
     BrowserModule,

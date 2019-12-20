@@ -1,3 +1,4 @@
+import { PropertiesComponent } from './properties/properties.component';
 import { ToolsComponent } from './tools/tools.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -11,6 +12,7 @@ const appRoutes: Routes = [
   { path: 'tools/rental-property-calc', component: RentalPropertyCalcComponent },
   { path: 'home', component: HomeComponent },
   { path: 'tools', component: ToolsComponent },
+  { path: 'properties', component: PropertiesComponent},
   {
     path: '',
     redirectTo: '/home',

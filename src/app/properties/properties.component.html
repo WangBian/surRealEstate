@@ -1,0 +1,20 @@
+<div class="container-fluid d-flex justify-content-center">
+    <div class="row">
+        <div class="col-3 d-flex mx-auto" *ngFor="let property of properties">
+            <div class="card">
+                <div class="card-body d-flex flex-column">
+                    <img src="{{property.img}}" class="card-img-top" alt="...">
+                    <div class="col-auto">
+                        <hr>
+                    </div>
+                    <h5 class="card-text text-info">Asking: {{property.price}} | Offer: {{property.offer}} | Rent:
+                        {{property.rent_zestimate}}</h5>
+                    <p class="card-text text-info">{{property.bedrooms}} bds | {{property.bathrooms}} ba |
+                        {{property.square_footage}} sqft</p>
+                    <p class="card-text text-info">{{property.address}}</p>
+                    <a href="{{property.url}}" class="btn btn-primary mt-auto" target="_blank">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
