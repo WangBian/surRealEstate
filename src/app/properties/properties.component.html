@@ -1,6 +1,23 @@
+<div class="container-fluid d-flex justify-content-center search">
+    <div class="row col-8 justify-content-around align-items-center">
+        <div class="col-3 d-flex p-0">
+            <input type="text" class="form-control search-slt" placeholder="City" #inputCity>
+        </div>
+        <div class="col-3 d-flex p-0">
+            <input type="text" class="form-control search-slt" placeholder="State" #inputState>
+        </div>
+        <div class="col-3 p-0">
+            <button type="button" class="btn btn-block btn-dark"
+                (click)="search(inputCity.value, inputState.value)">Search</button>
+        </div>
+    </div>
+</div>
+
 <div class="container-fluid d-flex justify-content-center">
+
     <div class="row col-8">
-        <div class="col-12 d-flex">
+        <div class="col-12 d-flex p-0">
+
             <div class="btn-group d-flex ml-auto">
                 <button type="button" class="btn">Sort By</button>
                 <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
@@ -14,17 +31,19 @@
             </div>
         </div>
 
-        <div class="col-3 d-flex" *ngFor="let property of properties">
+        <div class="col-3 d-flex p-0" *ngFor="let property of properties">
             <div class="card">
                 <div class="card-body d-flex flex-column">
                     <img src="{{property.img}}" class="card-img-top" alt="...">
                     <div class="col-auto">
                         <hr>
                     </div>
-                    <h6 class="card-text text-info">Asking: {{property.price_usd}} | Offer: {{property.offer}} | Rent:
+                    <h6 class="card-text text-info">Asking: {{property.price_usd}} | Offer: {{property.offer}} |
+                        Rent:
                         {{property.rent_zestimate}}</h6>
                     <div class="ml-auto card-text text-dark">
-                        <p>{{property.bedrooms}} bds | {{property.bathrooms}} ba | {{property.square_footage}} sqft</p>
+                        <p>{{property.bedrooms}} bds | {{property.bathrooms}} ba | {{property.square_footage}} sqft
+                        </p>
                         <p>{{property.address}}</p>
                         <p>{{property.title}}</p>
                     </div>
@@ -34,3 +53,5 @@
         </div>
     </div>
 </div>
+
+<router-outlet></router-outlet>

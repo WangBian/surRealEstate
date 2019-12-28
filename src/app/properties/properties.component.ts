@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import * as properties from '../../properties.json';
 
 @Component({
@@ -8,12 +8,14 @@ import * as properties from '../../properties.json';
 })
 export class PropertiesComponent implements OnInit {
 
+  city: string;
+  state: string;
+
   properties: any = (properties as any).default;
 
   constructor() { }
 
   ngOnInit() {
-    console.log(properties);
   }
 
   sort(order: string) {
@@ -31,5 +33,11 @@ export class PropertiesComponent implements OnInit {
         }
       })
     }
+  }
+
+  search(city: string, state: string) {
+    this.city = city;
+    this.state = state;
+
   }
 }
