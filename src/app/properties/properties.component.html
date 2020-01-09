@@ -1,4 +1,4 @@
-<div class="container-fluid d-flex justify-content-center search">
+<div class="container-fluid d-flex justify-content-center heading">
     <div class="row col-8 justify-content-around align-items-center">
         <div class="col-3 d-flex p-0">
             <input type="text" class="form-control search-slt" placeholder="City" #inputCity>
@@ -38,9 +38,9 @@
                     <div class="col-auto">
                         <hr>
                     </div>
-                    <h6 class="card-text text-info">Asking: {{property.price_usd}} | Offer: {{property.offer}} |
-                        Rent:
-                        {{property.rent_zestimate}}</h6>
+                    <h6 class="card-text text-info">Asking: {{property.price_usd}}</h6>
+                    <h6 class="card-text text-danger">Offer: {{property.offer}} </h6>
+                    <h6 class="card-text text-primary">Rent: {{property.rent_zestimate}}</h6>
                     <div class="ml-auto card-text text-dark">
                         <p>{{property.bedrooms}} bds | {{property.bathrooms}} ba | {{property.square_footage}} sqft
                         </p>

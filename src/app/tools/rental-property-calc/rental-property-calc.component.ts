@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentalPropertyCalcComponent implements OnInit {
 
+  imgUrl = '';
+  annualPropertyTaxes: number;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setImgUrl(event: any) {
+    this.imgUrl = event.target.value;
+  }
+
+  setAnnualPropertyTaxes(event: any){
+    this.annualPropertyTaxes = event.target.value;
   }
 
 }
