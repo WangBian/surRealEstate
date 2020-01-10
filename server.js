@@ -9,7 +9,7 @@ app.use(express.static(__dirname+'/dist/surrealestate'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/surrealestate/index.html'));
+res.sendFile(path.join(__dirname+'//dist/surrealestate/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
