@@ -1,3 +1,4 @@
+import { ToolsCalcService } from './../tools-calc.service';
 import { Component, OnInit, Output } from '@angular/core';
 import { NumberSymbol } from '@angular/common';
 
@@ -22,39 +23,23 @@ export class MortgageCalcComponent implements OnInit {
   monthlyTaxes: string;
   monthlyInsurance: string;
 
-  constructor() { }
+  constructor(private toolsCalcService: ToolsCalcService) { }
 
   ngOnInit() {
   }
 
   calculatePayment(amount: number, interest: number, years: number, annualTaxes: number, annualInsurance: number) {
+    
+    this.monthlyTaxes = this.toolsCalcService.toCurrency((parseFloat(annualTaxes.toString()) / 12).toFixed(2));
+    this.monthlyInsurance = this.toolsCalcService.toCurrency((parseFloat(annualInsurance.toString()) / 12).toFixed(2));
 
-    this.amount = amount;
-    this.interest = interest;
-    this.years = years;
-    this.annualTaxes = annualTaxes;
-    this.annualInsurance = annualInsurance;
-
-    var principal = parseFloat(amount.toString());
     var calculatedInterest = parseFloat(interest.toString()) / 100 / 12;
     var calculatedPayments = parseFloat(years.toString()) * 12;
+    var monthly = this.toolsCalcService.calculateMortgagePayment(amount, interest, years);
 
-    var x = Math.pow(1 + calculatedInterest, calculatedPayments);
-    var monthly = (principal * x * calculatedInterest) / (x - 1);
-
-    if (isFinite(monthly)) {
-      this.monthlyPayment = this.toCurrency(monthly.toFixed(2));
-      this.totalPayment = this.toCurrency((monthly * calculatedPayments).toFixed(2));
-      this.totalInterest = this.toCurrency(((monthly * calculatedPayments) - principal).toFixed(2));
-    }
-
-    this.monthlyTaxes = this.toCurrency((parseFloat(annualTaxes.toString()) / 12).toFixed(2));
-    this.monthlyInsurance = this.toCurrency((parseFloat(annualInsurance.toString()) / 12).toFixed(2));
-
+    this.monthlyPayment = this.toolsCalcService.toCurrency(monthly.toFixed(2));
+    this.totalPayment = this.toolsCalcService.toCurrency((monthly * calculatedPayments).toFixed(2));
+    this.totalInterest = this.toolsCalcService.toCurrency(((monthly * calculatedPayments) - amount).toFixed(2));
     this.showResults = true;
-  }
-
-  toCurrency(num: string) {
-    return '$ ' + num.replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
   }
 }

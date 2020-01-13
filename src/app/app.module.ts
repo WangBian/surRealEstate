@@ -1,3 +1,4 @@
+import { ToolsCalcService } from './tools/tools-calc.service';
 import { MortgageCalcComponent } from './tools/mortgage-calc/mortgage-calc.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -28,7 +29,7 @@ import { RentalPropertyReportComponent } from './tools/rental-property-report/re
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ToolsCalcService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
