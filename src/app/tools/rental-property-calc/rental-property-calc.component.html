@@ -5,121 +5,129 @@
 <br />
 <br />
 
-<div class="containter-fluid d-flex justify-content-center" #propertyInfo>
-    <div class="row col-8">
-        <form class="col-6">
-            <div class="form-row">
-                <div class="form-group col p-1">
-                    <label for="propertyAddress">Property Address</label>
-                    <input type="text" class="form-control" id="propertyAddress">
+<div class="containter p-2" #propertyInfo>
+    <div class="row">
+        <div class="col-sm-5 col-xs-12 offset-sm-2">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyAddress">Property Address</label>
+                        <input type="text" class="form-control" id="propertyAddress">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col p-1">
-                    <label for="propertyCity">Property City</label>
-                    <input type="text" class="form-control" id="propertyCity">
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyCity">Property City</label>
+                        <input type="text" class="form-control" id="propertyCity">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyState">Property State</label>
+                        <input type="text" class="form-control" id="propertyState">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyZip">Property Zip</label>
+                        <input type="text" class="form-control" id="propertyZip">
+                    </div>
                 </div>
-                <div class="form-group col p-1">
-                    <label for="propertyState">Property State</label>
-                    <input type="text" class="form-control" id="propertyState">
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyAnnualTaxes">Annual Property Taxes</label>
+                        <input type="number" class="form-control" id="propertyAnnualTaxes"
+                            (keyup)="setAnnualPropertyTaxes($event)">
+                    </div>
                 </div>
-                <div class="form-group col p-1">
-                    <label for="propertyZip">Property Zip</label>
-                    <input type="text" class="form-control" id="propertyZip">
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyPhotos">Property Photos</label>
+                        <input type="url" class="form-control" id="propertyPhotos" (keyup)="setImgUrl($event)">
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group p-1">
-                    <label for="propertyAnnualTaxes">Annual Property Taxes</label>
-                    <input type="number" class="form-control" id="propertyAnnualTaxes"
-                        (keyup)="setAnnualPropertyTaxes($event)">
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="propertyPhotos">Property Description</label>
+                        <textarea class="form-control" id="propertyDescription"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group p-1 col-12">
-                    <label for="propertyPhotos">Property Photos</label>
-                    <input type="url" class="form-control" id="propertyPhotos" (keyup)="setImgUrl($event)">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group p-1 col-12">
-                    <label for="propertyPhotos">Property Description</label>
-                    <textarea class="form-control" id="propertyDescription"></textarea>
-                </div>
-            </div>
-        </form>
-        <div class="col-6">
-            <img src="{{imgUrl}}" alt="Property photos not available" class="rounded float-right img-fluid">
+            </form>
+        </div>
+        <div class="col-sm-3 col-xs-12">
+            <img src="{{imgUrl}}" alt="Property photos not available" class="rounded float-left img-fluid">
         </div>
     </div>
 </div>
 <hr>
-<div class="containter-fluid d-flex justify-content-center" #mortgageInfo>
-    <div class="row col-8">
-        <form class="col-12">
-            <div class="form-row">
-                <div class="form-group col p-1">
-                    <label for="askingPrice">Asking Price</label>
-                    <input type="number" class="form-control" id="askingPrice">
+<div class="containter p-2" #mortgageInfo>
+    <div class="row">
+        <div class="col-sm-8 col-xs-12 offset-sm-2">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="askingPrice">Asking Price</label>
+                        <input type="number" class="form-control" id="askingPrice">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="repairCost">Repair Cost</label>
+                        <input type="number" class="form-control" id="repairCost">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="afterRepairValue">After Repair Value</label>
+                        <input type="number" class="form-control" id="afterRepairValue">
+                    </div>
                 </div>
-                <div class="form-group col p-1">
-                    <label for="afterRepairValue">After Repair Value</label>
-                    <input type="number" class="form-control" id="afterRepairValue">
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="downPayment">Down Payment (%)</label>
+                        <input type="number" class="form-control" id="downPayment">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="mortgageTerm">Mortgage Period (years)</label>
+                        <input type="number" class="form-control" id="mortgageTerm">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="interest">Interest (%)</label>
+                        <input type="number" class="form-control" id="interest">
+                    </div>
                 </div>
-                <div class="form-group col p-1">
-                    <label for="repairCost">Repair Cost</label>
-                    <input type="number" class="form-control" id="repairCost">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col p-1">
-                    <label for="downPayment">Down Payment (%)</label>
-                    <input type="number" class="form-control" id="downPayment">
-                </div>
-                <div class="form-group col p-1">
-                    <label for="mortgageTerm">Mortgage Term (years)</label>
-                    <input type="number" class="form-control" id="mortgageTerm">
-                </div>
-                <div class="form-group col p-1">
-                    <label for="interest">Interest (%)</label>
-                    <input type="number" class="form-control" id="interest">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 <hr>
-<div class="containter-fluid d-flex justify-content-center" #rentalInfo>
-    <div class="row col-8">
-        <form class="col-12">
-            <div class="form-row">
-                <div class="form-group col p-1">
-                    <label for="monthlyRent">Monthly Rent ($)</label>
-                    <input type="number" class="form-control" id="monthlyRent">
+<div class="containter p-2" #rentalInfo>
+    <div class="row">
+        <div class="col-sm-8 col-xs-12 offset-sm-2">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="monthlyRent">Monthly Rent ($)</label>
+                        <input type="number" class="form-control" id="monthlyRent">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="maintenance">Maintenance (%)</label>
+                        <input type="number" class="form-control" id="maintenance">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="capExp">Capital Exp (%)</label>
+                        <input type="number" class="form-control" id="capExp">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="vacancyRate">Vacancy Rate (%)</label>
+                        <input type="number" class="form-control" id="vacancyRate">
+                    </div>
+                    <div class="form-group col-sm col-xs-12 p-1">
+                        <label for="management">Management (%)</label>
+                        <input type="number" class="form-control" id="management">
+                    </div>
                 </div>
-                <div class="form-group col p-1">
-                    <label for="maintenance">Maintenance (%)</label>
-                    <input type="number" class="form-control" id="maintenance">
-                </div>
-                <div class="form-group col p-1">
-                    <label for="capExp">Capital Exp (%)</label>
-                    <input type="number" class="form-control" id="capExp">
-                </div>
-                <div class="form-group col p-1">
-                    <label for="vacancyRate">Vacancy Rate (%)</label>
-                    <input type="number" class="form-control" id="vacancyRate">
-                </div>
-                <div class="form-group col p-1">
-                    <label for="management">Management (%)</label>
-                    <input type="number" class="form-control" id="management">
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 
-<div class="containter-fluid d-flex justify-content-center" #calBtn>
-    <div class="row col-8">
-        <button class="btn btn-dark ml-auto col-2">Caculate</button>
+<div class="containter p-1" #calBtn>
+    <div class="row">
+        <div class="col-sm-10 col-xs-12">
+            <button class="btn btn-dark col-2 float-right">Caculate</button>
+        </div>
     </div>
 </div>
