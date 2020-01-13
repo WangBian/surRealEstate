@@ -10,6 +10,7 @@ import { RentalPropertyCalcComponent } from './tools/rental-property-calc/rental
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PropertiesComponent } from './properties/properties.component';
+import { RentalPropertyReportComponent } from './tools/rental-property-report/rental-property-report.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PropertiesComponent } from './properties/properties.component';
     RentalPropertyCalcComponent,
     MortgageCalcComponent,
     PageNotFoundComponent,
-    PropertiesComponent
+    PropertiesComponent,
+    RentalPropertyReportComponent
   ],
   imports: [
     BrowserModule,

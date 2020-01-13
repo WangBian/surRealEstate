@@ -1,3 +1,4 @@
+import { RentalPropertyReportComponent } from './tools/rental-property-report/rental-property-report.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { ToolsComponent } from './tools/tools.component';
 import { HomeComponent } from './home/home.component';
@@ -10,6 +11,7 @@ import { Routes, RouterModule } from '@angular/router';
 const appRoutes: Routes = [
   { path: 'tools/mortgage-calc', component: MortgageCalcComponent },
   { path: 'tools/rental-property-calc', component: RentalPropertyCalcComponent },
+  { path: 'tools/rental-property-report', component: RentalPropertyReportComponent},
   { path: 'home', component: HomeComponent },
   { path: 'tools', component: ToolsComponent },
   { path: 'properties', component: PropertiesComponent},
