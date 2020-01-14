@@ -50,7 +50,7 @@
                 </div>
             </form>
         </div>
-        
+
         <div class="col-sm-3 col-xs-12">
             <img src="{{imgUrl}}" alt="Property photos not available" class="rounded float-left img-fluid">
         </div>
@@ -64,7 +64,7 @@
                 <div class="form-row">
                     <div class="form-group col-sm col-xs-12">
                         <label for="askingPrice">Asking Price</label>
-                        <input type="number" class="form-control" id="askingPrice">
+                        <input type="number" class="form-control" id="askingPrice" (keyup)="setAaskingPrice($event)">
                     </div>
                     <div class="form-group col-sm col-xs-12">
                         <label for="repairCost">Repair Cost</label>
@@ -78,15 +78,16 @@
                 <div class="form-row">
                     <div class="form-group col-sm col-xs-12">
                         <label for="downPayment">Down Payment (%)</label>
-                        <input type="number" class="form-control" id="downPayment">
+                        <input type="number" class="form-control" id="downPayment" (keyup)="setDownPayment($event)">
                     </div>
                     <div class="form-group col-sm col-xs-12">
-                        <label for="mortgageTerm">Mortgage Period (years)</label>
-                        <input type="number" class="form-control" id="mortgageTerm">
+                        <label for="mortgagePeriod">Mortgage Period (years)</label>
+                        <input type="number" class="form-control" id="mortgagePeriod"
+                            (keyup)="setMortgagePeriod($event)">
                     </div>
                     <div class="form-group col-sm col-xs-12">
                         <label for="interest">Interest (%)</label>
-                        <input type="number" class="form-control" id="interest">
+                        <input type="number" class="form-control" id="interest" (keyup)="setInterestRate($event)">
                     </div>
                 </div>
             </form>
@@ -99,10 +100,16 @@
         <div class="col-sm-8 col-xs-12 offset-sm-2">
             <form>
                 <div class="form-row">
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="monthlyRent">Monthly Rent ($)</label>
+                    <div class="form-group col-sm-3 col-xs-12">
+                        <label for="monthlyRent">Monthly Rent</label>
                         <input type="number" class="form-control" id="monthlyRent">
                     </div>
+                    <div class="form-group col-sm-3 col-xs-12">
+                        <label for="annualInsurance">Annual Insurance</label>
+                        <input type="number" class="form-control" id="annualInsurance">
+                    </div>
+                </div>
+                <div class="form-row">
                     <div class="form-group col-sm col-xs-12">
                         <label for="maintenance">Maintenance (%)</label>
                         <input type="number" class="form-control" id="maintenance">
@@ -128,7 +135,10 @@
 <div class="container" #calBtn>
     <div class="row">
         <div class="col-sm-2 col-xs-12 offset-sm-5 text-center">
-            <a routerLink="/tools/rental-property-report" class="btn btn-dark align-items-center btn-block">Calculate</a>
+            <a routerLink="/tools/rental-property-report"
+                class="btn btn-dark align-items-center btn-block" (click)="calculate()">Calculate</a>
         </div>
     </div>
 </div>
+<br>
+<br>

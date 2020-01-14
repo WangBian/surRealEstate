@@ -1,4 +1,6 @@
+import { ToolsCalcService } from './../tools-calc.service';
 import { Component, OnInit } from '@angular/core';
+import { Property } from '../shared/property.model';
 
 @Component({
   selector: 'app-rental-property-report',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RentalPropertyReportComponent implements OnInit {
 
-  constructor() { }
+  property: Property;
+
+  constructor(private toolsCalcService: ToolsCalcService) { }
 
   ngOnInit() {
+    this.property = this.toolsCalcService.getProperty();
   }
 
 }

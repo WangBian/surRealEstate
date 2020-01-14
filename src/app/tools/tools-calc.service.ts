@@ -1,8 +1,13 @@
+import { PropertiesComponent } from './../properties/properties.component';
+import { Property } from './shared/property.model';
+
 export class ToolsCalcService {
-    amount: number;
-    interest: number;
-    years: number;
-    monthlyPayment: number;
+    private amount: number;
+    private interest: number;
+    private years: number;
+    private monthlyPayment: number;
+
+    private property: Property;
 
     calculateMortgagePayment(amount: number, interest: number, years: number) {
 
@@ -22,5 +27,20 @@ export class ToolsCalcService {
 
     toCurrency(num: string) {
         return '$ ' + num.replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+    }
+
+    setProperty(propertyAddress: string, propertyCity: string, propertyState: string, propertyZip: string,
+        monthlyPropertyTax: number, imgUrl: string, propertyDescritpion: string, askingPrice: number, repairCost: number,
+        afterRepairValue: number, downPayment: number, mortgagePeriod: number, interestRate: number, monthlyRent: number,
+        monthlyInsurance: number, maintenance: number, capEx: number, vacancy: number, management: number) {
+        console.log("here");
+        this.property = new Property(propertyAddress, propertyCity, propertyState, propertyZip,
+            monthlyPropertyTax, imgUrl, propertyDescritpion, askingPrice, repairCost,
+            afterRepairValue, downPayment, mortgagePeriod, interestRate, monthlyRent,
+            monthlyInsurance, maintenance, capEx, vacancy, management)
+    }
+
+    getProperty() {
+        return this.property;
     }
 }
