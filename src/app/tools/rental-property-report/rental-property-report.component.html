@@ -31,12 +31,6 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-sm col-xs-12">
-                        <label for="propertyPhotos">Property Photos</label>
-                        <input type="url" class="form-control" id="propertyPhotos" value="{{property.photo}}" disabled>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm col-xs-12">
                         <label for="propertyDescription">Property Description</label>
                         <textarea class="form-control" id="propertyDescription" value="{{property.description}}" disabled></textarea>
                     </div>
@@ -45,7 +39,7 @@
         </div>
 
         <div class="col-sm-3 col-xs-12">
-            <img src="{{imgUrl}}" alt="Property photos not available" class="rounded float-left img-fluid">
+            <img src="{{property.photo}}" alt="Property photos not available" class="rounded float-left img-fluid">
         </div>
     </div>
 </div>
