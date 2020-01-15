@@ -22,6 +22,7 @@ export class RentalPropertyCalcComponent implements OnInit {
   downPayment: number;
   mortgagePeriod: number;
   interestRate: number;
+  closingCost: number;
   monthlyRent: number;
   annaulInsurance: number;
   maintenance: number;
@@ -29,11 +30,26 @@ export class RentalPropertyCalcComponent implements OnInit {
   vacancy: number;
   management: number;
 
-  monthlyMortgagePayment: number;
-
   constructor(private toolsCalcService: ToolsCalcService) { }
 
   ngOnInit() {
+  }
+
+  setPropertyAddress(event: any){
+    this.propertyAddress = event.target.value;
+    console.log(this.propertyAddress);
+  }
+
+  setPropertyCity(event: any){
+    this.propertyCity = event.target.value;
+  }
+
+  setPropertyState(event: any){
+    this.propertyState = event.target.value;
+  }
+
+  setPropertyZip(event: any){
+    this.propertyZip = event.target.value;
   }
 
   setImgUrl(event: any) {
@@ -42,6 +58,10 @@ export class RentalPropertyCalcComponent implements OnInit {
 
   setAnnualPropertyTaxes(event: any) {
     this.annualPropertyTaxes = event.target.value;
+  }
+
+  setPropertyDescription(event: any) {
+    this.propertyDescritpion = event.target.value;
   }
 
   setAaskingPrice(event: any) {
@@ -68,21 +88,48 @@ export class RentalPropertyCalcComponent implements OnInit {
     this.interestRate = event.target.value;
   }
 
+  setClosingCost(event: any) {
+    this.closingCost = event.target.value;
+  }
+
+  setMonthlyRent(event: any) {
+    this.monthlyRent = event.target.value;
+  }
+
+  setAnnualInsurance(event: any) {
+    this.annaulInsurance = event.target.value;
+  }
+
+  setMaintenane(event: any){
+    this.maintenance = event.target.value;
+  }
+
+  setCapEx(event: any){
+    this.capEx = event.target.value;
+  }
+
+  setVacancyRate(event: any){
+    this.vacancy = event.target.value;
+  }
+
+  setManagement(event: any){
+    this.management = event.target.value;
+  }
+
   calculateMonthlyMortgagePayment() {
     var loanAmount = this.askingPrice * (1 - this.downPayment / 100);
     return this.toolsCalcService.calculateMortgagePayment(loanAmount, this.interestRate, this.mortgagePeriod);
   }
 
   calculate() {
-    console.log("here1");
-    this.monthlyMortgagePayment = this.calculateMonthlyMortgagePayment();
-    var monthlyPropertyTax = this.annualPropertyTaxes / 12;
     var monthlyInsurance = this.annaulInsurance / 12;
 
     this.toolsCalcService.setProperty(this.propertyAddress, this.propertyCity, this.propertyState, this.propertyZip,
-      monthlyPropertyTax, this.imgUrl, this.propertyDescritpion, this.askingPrice, this.repairCost,
-      this.afterRepairValue, this.downPayment, this.mortgagePeriod, this.interestRate, this.monthlyRent,
-      monthlyInsurance, this.maintenance, this.capEx, this.vacancy, this.management)
+      this.annualPropertyTaxes, this.imgUrl, this.propertyDescritpion);
+    this.toolsCalcService.setMortgageInfo(this.askingPrice, this.repairCost, this.afterRepairValue, 
+      this.downPayment, this.mortgagePeriod, this.interestRate, this.closingCost);
+    this.toolsCalcService.setRentalInfo(this.monthlyRent, monthlyInsurance, this.maintenance, 
+      this.capEx, this.vacancy, this.management);
   }
 
 }
