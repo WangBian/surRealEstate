@@ -1,6 +1,8 @@
 import { Property } from './../shared/property.model';
 import { Component, OnInit } from '@angular/core';
 import { ToolsCalcService } from '../tools-calc.service';
+import { toBase64String } from '@angular/compiler/src/output/source_map';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-rental-property-calc',
@@ -24,7 +26,7 @@ export class RentalPropertyCalcComponent implements OnInit {
   interestRate: number;
   closingCost: number;
   monthlyRent: number;
-  annaulInsurance: number;
+  monthlyInsurance: number;
   maintenance: number;
   capEx: number;
   vacancy: number;
@@ -33,6 +35,28 @@ export class RentalPropertyCalcComponent implements OnInit {
   constructor(private toolsCalcService: ToolsCalcService) { }
 
   ngOnInit() {
+    this.propertyAddress = this.toolsCalcService.getProperty().address;
+    this.propertyCity = this.toolsCalcService.getProperty().city;
+    this.propertyState = this.toolsCalcService.getProperty().state;
+    this.propertyZip = this.toolsCalcService.getProperty().zip;
+    this.annualPropertyTaxes = this.toolsCalcService.getProperty().annualPropertyTax;
+    this.imgUrl = this.toolsCalcService.getProperty().photo;
+    this.propertyDescritpion = this.toolsCalcService.getProperty().description;
+
+    this.askingPrice = this.toolsCalcService.getMortgageInfo().price;
+    this.repairCost = this.toolsCalcService.getMortgageInfo().repairCost;
+    this.afterRepairValue = this.toolsCalcService.getMortgageInfo().afterRepairValue;
+    this.downPayment = this.toolsCalcService.getMortgageInfo().downPayment;
+    this.mortgagePeriod = this.toolsCalcService.getMortgageInfo().mortgagePeriod;
+    this.interestRate = this.toolsCalcService.getMortgageInfo().interestRate;
+    this.closingCost = this.toolsCalcService.getMortgageInfo().closingCost;
+
+    this.monthlyRent = this.toolsCalcService.getRentalInfo().monthlyRent;
+    this.monthlyInsurance = this.toolsCalcService.getRentalInfo().monthlyInsurance;
+    this.maintenance = this.toolsCalcService.getRentalInfo().maintenance;
+    this.capEx = this.toolsCalcService.getRentalInfo().capEx;
+    this.vacancy = this.toolsCalcService.getRentalInfo().vacancy;
+    this.management = this.toolsCalcService.getRentalInfo().management;
   }
 
   setPropertyAddress(event: any){
@@ -96,8 +120,8 @@ export class RentalPropertyCalcComponent implements OnInit {
     this.monthlyRent = event.target.value;
   }
 
-  setAnnualInsurance(event: any) {
-    this.annaulInsurance = event.target.value;
+  setMonthlyInsurance(event: any) {
+    this.monthlyInsurance = event.target.value;
   }
 
   setMaintenane(event: any){
@@ -122,13 +146,11 @@ export class RentalPropertyCalcComponent implements OnInit {
   }
 
   calculate() {
-    var monthlyInsurance = this.annaulInsurance / 12;
-
     this.toolsCalcService.setProperty(this.propertyAddress, this.propertyCity, this.propertyState, this.propertyZip,
       this.annualPropertyTaxes, this.imgUrl, this.propertyDescritpion);
     this.toolsCalcService.setMortgageInfo(this.askingPrice, this.repairCost, this.afterRepairValue, 
       this.downPayment, this.mortgagePeriod, this.interestRate, this.closingCost);
-    this.toolsCalcService.setRentalInfo(this.monthlyRent, monthlyInsurance, this.maintenance, 
+    this.toolsCalcService.setRentalInfo(this.monthlyRent, this.monthlyInsurance, this.maintenance, 
       this.capEx, this.vacancy, this.management);
   }
 
