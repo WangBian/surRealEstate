@@ -3,51 +3,36 @@
 </header>
 <br>
 <br>
-<div class="container" #propertyInfo>
+<div class="container">
     <div class="row">
-        <div class="col-sm-5 col-xs-12 offset-sm-2">
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="propertyAddress">Property Address</label>
-                        <input type="text" class="form-control" id="propertyAddress" value="{{property.address}}"
-                            disabled>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="propertyCity">Property City</label>
-                        <input type="text" class="form-control" id="propertyCity" value="{{property.city}}" disabled>
-                    </div>
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="propertyState">Property State</label>
-                        <input type="text" class="form-control" id="propertyState" value="{{property.state}}" disabled>
-                    </div>
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="propertyZip">Property Zip</label>
-                        <input type="text" class="form-control" id="propertyZip" value="{{property.zip}}" disabled>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="propertyAnnualTaxes">Annual Property Taxes</label>
-                        <input type="number" class="form-control" id="propertyAnnualTaxes"
-                            value="{{property.annualPropertyTax}}" disabled>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-sm col-xs-12">
-                        <label for="propertyDescription">Property Description</label>
-                        <textarea class="form-control" id="propertyDescription" value="{{property.description}}"
-                            disabled></textarea>
-                    </div>
-                </div>
-            </form>
+        <div class="col-sm col-xs-12">
+            <h4>{{property.address}}, {{property.city}}, {{property.state}} {{property.zip}}</h4>
         </div>
-
-        <div class="col-sm-3 col-xs-12">
-            <img src="{{property.photo}}" alt="Property photos not available" class="rounded float-left img-fluid">
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-2 col-xs-12 text-center">
+            <a routerLink="/tools/rental-property-calc" class="btn btn-dark btn-block text-light float-left">Edit
+                Report</a>
+        </div>
+        <div class="col-sm-2 col-xs-12 text-center">
+            <a routerLink="#" class="btn btn-dark btn-block text-light float-left">Download PDF</a>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6 col-xs-21">
+            <div>
+                <h5>{{mortgageInfo.price}}</h5>
+                <p class="title">PURCHASE PRICE</p>
+            </div>
+            <br>
+            <div>
+                <dl class="row">
+                    <dd class="title">Purchase Closing Cost    </dd>
+                    <dt>{{mortgageInfo.price}}</dt>
+                </dl>
+            </div>
         </div>
     </div>
 </div>
-<hr>

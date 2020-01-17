@@ -1,23 +1,15 @@
 import { RentalInfo } from './shared/rentalInfo.model';
 import { MortgageInfo } from './shared/mortgageInfo.model';
-import { PropertiesComponent } from './../properties/properties.component';
 import { Property } from './shared/property.model';
 
 export class ToolsCalcService {
-    private amount: number;
-    private interest: number;
-    private years: number;
     private monthlyPayment: number;
 
-    private property: Property;
-    private mortgageInfo: MortgageInfo;
-    private rentalInfo: RentalInfo;
+    private property = new Property(null, null, null, null, null, null, null);
+    private mortgageInfo = new MortgageInfo(null, null, null, null, null, null, null);
+    private rentalInfo = new RentalInfo(null, null, null, null, null, null);
 
     calculateMortgagePayment(amount: number, interest: number, years: number) {
-
-        this.amount = amount;
-        this.interest = interest;
-        this.years = years;
 
         var principal = parseFloat(amount.toString());
         var calculatedInterest = parseFloat(interest.toString()) / 100 / 12;

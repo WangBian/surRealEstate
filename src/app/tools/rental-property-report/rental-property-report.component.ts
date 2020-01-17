@@ -31,7 +31,6 @@ export class RentalPropertyReportComponent implements OnInit {
     this.monthlyMortgagePayment = this.toolsCalcService.calculateMortgagePayment(mortgageAmount,
       this.mortgageInfo.interestRate, this.mortgageInfo.mortgagePeriod);
 
-
     this.cashflow = this.rentalInfo.monthlyRent - (this.monthlyMortgagePayment + this.rentalInfo.monthlyInsurance +
       this.rentalInfo.monthlyRent *
       (this.rentalInfo.maintenance + this.rentalInfo.capEx + this.rentalInfo.vacancy + this.rentalInfo.management) / 100);
