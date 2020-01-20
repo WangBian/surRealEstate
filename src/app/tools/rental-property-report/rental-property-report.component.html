@@ -11,28 +11,53 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-sm-2 col-xs-12 text-center">
-            <a routerLink="/tools/rental-property-calc" class="btn btn-dark btn-block text-light float-left">Edit
+        <div class="col-sm-2 col-xs-12 text-center p-1">
+            <a routerLink="/tools/rental-property-calc" class="btn-sm btn-dark btn-block text-light float-left p-1">Edit
                 Report</a>
         </div>
-        <div class="col-sm-2 col-xs-12 text-center">
-            <a routerLink="#" class="btn btn-dark btn-block text-light float-left">Download PDF</a>
+        <div class="col-sm-2 col-xs-12 text-center p-1">
+            <a routerLink="#" class="btn-sm btn-dark btn-block text-light float-left">Download PDF</a>
         </div>
     </div>
     <hr>
     <div class="row">
-        <div class="col-sm-6 col-xs-21">
-            <div>
-                <h5>{{mortgageInfo.price}}</h5>
-                <p class="title">PURCHASE PRICE</p>
-            </div>
-            <br>
-            <div>
-                <dl class="row">
-                    <dd class="title">Purchase Closing Cost    </dd>
-                    <dt>{{mortgageInfo.price}}</dt>
-                </dl>
-            </div>
-        </div>
+        <ul class="col-sm-3 col-xs-12">
+            <h5>{{mortgageInfo.price}}</h5>
+            <p class="title">PURCHASE PRICE</p>
+        </ul>
     </div>
-</div>
+    <br>
+    <div class="row">
+        <dl class="row col-sm-4 col-xs-12">
+            <dd class="title col-sm-7 col-xs-7">Purchase Closing Cost</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">Estimated Repairs</dd>
+            <dt class="col-sm-2 col-xs-12">{{mortgageInfo.repairCost}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">After Repair Value</dd>
+            <dt class="col-sm-2 col-xs-12">{{mortgageInfo.afterRepairValue}}</dt>
+        </dl>
+    </div>
+    <br>
+    <div class="row">
+        <dl class="row col-sm-4 col-xs-12">
+            <dd class="title col-sm-7 col-xs-7">Down Payment</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">Loan Amount</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">Loan Period</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.mortgagePeriod}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">Loan Interest Rate</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.interestRate}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">Monthly P&I</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
+
+            <dd class="title col-sm-7 col-xs-12">Total Cash Needed</dd>
+            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
+        </dl>
+    </div>

@@ -6,7 +6,7 @@ export class ToolsCalcService {
     private monthlyPayment: number;
 
     private property = new Property(null, null, null, null, null, null, null);
-    private mortgageInfo = new MortgageInfo(null, null, null, null, null, null, null);
+    private mortgageInfo = new MortgageInfo(0, null, null, 0, 0, 0, 0);
     private rentalInfo = new RentalInfo(null, null, null, null, null, null);
 
     calculateMortgagePayment(amount: number, interest: number, years: number) {
