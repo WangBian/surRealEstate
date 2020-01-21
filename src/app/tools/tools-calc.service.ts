@@ -25,9 +25,9 @@ export class ToolsCalcService {
         return '$ ' + num.replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
     }
 
-    setProperty(propertyAspanress: string, propertyCity: string, propertyState: string, propertyZip: string,
+    setProperty(propertyAddress: string, propertyCity: string, propertyState: string, propertyZip: string,
         annualPropertyTax: number, imgUrl: string, propertyDescritpion: string) {
-        this.property = new Property(propertyAspanress, propertyCity, propertyState, propertyZip,
+        this.property = new Property(propertyAddress, propertyCity, propertyState, propertyZip,
             annualPropertyTax, imgUrl, propertyDescritpion)
     }
 

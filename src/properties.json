@@ -1,6 +1,6 @@
 [
 {
-    "aspanress": "95 Bartholomew Blvd, Powell, OH 43065",
+    "address": "95 Bartholomew Blvd, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -23,7 +23,7 @@
     "year_built": 1987
 },
 {
-    "aspanress": "8219 Deep Run, Powell, OH 43065",
+    "address": "8219 Deep Run, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -46,7 +46,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "2185 Castlebrook Dr, Powell, OH 43065",
+    "address": "2185 Castlebrook Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -69,7 +69,7 @@
     "year_built": 1997
 },
 {
-    "aspanress": "4625 Seldom Seen Rd, Powell, OH 43065",
+    "address": "4625 Seldom Seen Rd, Powell, OH 43065",
     "bathrooms": 1.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -92,7 +92,7 @@
     "year_built": 1952
 },
 {
-    "aspanress": "2920 Hyatts Rd, Powell, OH 43065",
+    "address": "2920 Hyatts Rd, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -115,7 +115,7 @@
     "year_built": 1973
 },
 {
-    "aspanress": "4155 Village Club Dr, Powell, OH 43065",
+    "address": "4155 Village Club Dr, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -138,7 +138,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "3938 Hampshire Ave, Powell, OH 43065",
+    "address": "3938 Hampshire Ave, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -161,7 +161,7 @@
     "year_built": 2003
 },
 {
-    "aspanress": "7475 Fairfield Lakes Dr, Powell, OH 43065",
+    "address": "7475 Fairfield Lakes Dr, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -184,7 +184,7 @@
     "year_built": 2001
 },
 {
-    "aspanress": "4324 Clark Shaw Rd, Powell, OH 43065",
+    "address": "4324 Clark Shaw Rd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -207,7 +207,7 @@
     "year_built": 2000
 },
 {
-    "aspanress": "8251 Liberty Rd N, Powell, OH 43065",
+    "address": "8251 Liberty Rd N, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -230,7 +230,7 @@
     "year_built": 2012
 },
 {
-    "aspanress": "1601 Abbotsford Green Dr, Powell, OH 43065",
+    "address": "1601 Abbotsford Green Dr, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -253,7 +253,7 @@
     "year_built": 2017
 },
 {
-    "aspanress": "1651 Daventry Ln, Powell, OH 43065",
+    "address": "1651 Daventry Ln, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -276,7 +276,7 @@
     "year_built": 1972
 },
 {
-    "aspanress": "3659 Niblick Pl, Powell, OH 43065",
+    "address": "3659 Niblick Pl, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -299,7 +299,7 @@
     "year_built": 1999
 },
 {
-    "aspanress": "264 Woodsfield Ct, Powell, OH 43065",
+    "address": "264 Woodsfield Ct, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -322,7 +322,7 @@
     "year_built": 1991
 },
 {
-    "aspanress": "4737 Sibel Ct, Powell, OH 43065",
+    "address": "4737 Sibel Ct, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -345,7 +345,7 @@
     "year_built": 1994
 },
 {
-    "aspanress": "801 Autumn Ln, Powell, OH 43065",
+    "address": "801 Autumn Ln, Powell, OH 43065",
     "bathrooms": 9.0,
     "bedrooms": 6,
     "city": "Powell",
@@ -368,7 +368,7 @@
     "year_built": 2000
 },
 {
-    "aspanress": "95 Gainsway Ct, Powell, OH 43065",
+    "address": "95 Gainsway Ct, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -391,7 +391,7 @@
     "year_built": 1997
 },
 {
-    "aspanress": "348 Park Woods Ln, Powell, OH 43065",
+    "address": "348 Park Woods Ln, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -414,7 +414,7 @@
     "year_built": 1998
 },
 {
-    "aspanress": "7228 Scioto Pkwy, Powell, OH 43065",
+    "address": "7228 Scioto Pkwy, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -437,7 +437,7 @@
     "year_built": 2001
 },
 {
-    "aspanress": "2635 Main St, Powell, OH 43065",
+    "address": "2635 Main St, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -460,7 +460,7 @@
     "year_built": 1901
 },
 {
-    "aspanress": "8367 Dolman Dr, Powell, OH 43065",
+    "address": "8367 Dolman Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -483,7 +483,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "2028 Loch Lomond Dr, Powell, OH 43065",
+    "address": "2028 Loch Lomond Dr, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -506,7 +506,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "8869 Westward Way, Powell, OH 43065",
+    "address": "8869 Westward Way, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -529,7 +529,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "1950 Carriage Rd, Powell, OH 43065",
+    "address": "1950 Carriage Rd, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -552,7 +552,7 @@
     "year_built": 1967
 },
 {
-    "aspanress": "8354 Deep Run, Powell, OH 43065",
+    "address": "8354 Deep Run, Powell, OH 43065",
     "bathrooms": 8.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -575,7 +575,7 @@
     "year_built": 2000
 },
 {
-    "aspanress": "250 Deer Crk E, Powell, OH 43065",
+    "address": "250 Deer Crk E, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -598,7 +598,7 @@
     "year_built": 1978
 },
 {
-    "aspanress": "4541 Hickory Rock Dr, Powell, OH 43065",
+    "address": "4541 Hickory Rock Dr, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -621,7 +621,7 @@
     "year_built": 2003
 },
 {
-    "aspanress": "3159 Rossmore Cir, Powell, OH 43065",
+    "address": "3159 Rossmore Cir, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -644,7 +644,7 @@
     "year_built": 2015
 },
 {
-    "aspanress": "2407 Woodland Glen Dr, Powell, OH 43065",
+    "address": "2407 Woodland Glen Dr, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -667,7 +667,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "451 Riverbend Ave, Powell, OH 43065",
+    "address": "451 Riverbend Ave, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -690,7 +690,7 @@
     "year_built": 2000
 },
 {
-    "aspanress": "10549 Wellington Blvd, Powell, OH 43065",
+    "address": "10549 Wellington Blvd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -713,7 +713,7 @@
     "year_built": 1994
 },
 {
-    "aspanress": "8796 Bakircay Ln, Powell, OH 43065",
+    "address": "8796 Bakircay Ln, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -736,7 +736,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "761 Woods Hollow Ln, Powell, OH 43065",
+    "address": "761 Woods Hollow Ln, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -759,7 +759,7 @@
     "year_built": 1993
 },
 {
-    "aspanress": "10270 Olentangy River Rd, Powell, OH 43065",
+    "address": "10270 Olentangy River Rd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -782,7 +782,7 @@
     "year_built": 1989
 },
 {
-    "aspanress": "10510 Wellington Blvd, Powell, OH 43065",
+    "address": "10510 Wellington Blvd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -805,7 +805,7 @@
     "year_built": 2001
 },
 {
-    "aspanress": "4250 Sighthill Ave, Powell, OH 43065",
+    "address": "4250 Sighthill Ave, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -828,7 +828,7 @@
     "year_built": 2008
 },
 {
-    "aspanress": "Martin Ray Plan, Hyatts Crossing",
+    "address": "Martin Ray Plan, Hyatts Crossing",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -851,7 +851,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "8562 Trail Lake Dr, Powell, OH 43065",
+    "address": "8562 Trail Lake Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -874,7 +874,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "3706 Pine Bank Dr, Powell, OH 43065",
+    "address": "3706 Pine Bank Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -897,7 +897,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "411 Bear Woods Dr, Powell, OH 43065",
+    "address": "411 Bear Woods Dr, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -920,7 +920,7 @@
     "year_built": 1998
 },
 {
-    "aspanress": "859 Creek Bend Ln, Powell, OH 43065",
+    "address": "859 Creek Bend Ln, Powell, OH 43065",
     "bathrooms": 7.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -943,7 +943,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "4821 Oakland Ridge Dr, Powell, OH 43065",
+    "address": "4821 Oakland Ridge Dr, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -966,7 +966,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "10891 Buckingham Pl, Powell, OH 43065",
+    "address": "10891 Buckingham Pl, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -989,7 +989,7 @@
     "year_built": 1993
 },
 {
-    "aspanress": "8308 Steitz Rd, Powell, OH 43065",
+    "address": "8308 Steitz Rd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1012,7 +1012,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "487 Junia Ct, Powell, OH 43065",
+    "address": "487 Junia Ct, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -1035,7 +1035,7 @@
     "year_built": 2012
 },
 {
-    "aspanress": "3849 Coral Creek Ct, Powell, OH 43065",
+    "address": "3849 Coral Creek Ct, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -1058,7 +1058,7 @@
     "year_built": 2012
 },
 {
-    "aspanress": "476 Partridge Bnd, Powell, OH 43065",
+    "address": "476 Partridge Bnd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1081,7 +1081,7 @@
     "year_built": 1988
 },
 {
-    "aspanress": "6980 Concord Bend Dr, Powell, OH 43065",
+    "address": "6980 Concord Bend Dr, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1104,7 +1104,7 @@
     "year_built": 1989
 },
 {
-    "aspanress": "73 Sycamore Ridge Dr, Powell, OH 43065",
+    "address": "73 Sycamore Ridge Dr, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1127,7 +1127,7 @@
     "year_built": 1993
 },
 {
-    "aspanress": "356 Partridge Bnd, Powell, OH 43065",
+    "address": "356 Partridge Bnd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1150,7 +1150,7 @@
     "year_built": 1988
 },
 {
-    "aspanress": "5454 Sunset Ct, Powell, OH 43065",
+    "address": "5454 Sunset Ct, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -1173,7 +1173,7 @@
     "year_built": 1975
 },
 {
-    "aspanress": "1991 Woodland Hall Dr, Delaware, OH 43015",
+    "address": "1991 Woodland Hall Dr, Delaware, OH 43015",
     "bathrooms": 7.0,
     "bedrooms": 5,
     "city": "Delaware",
@@ -1196,7 +1196,7 @@
     "year_built": 2010
 },
 {
-    "aspanress": "1650 Abbotsford Green Dr, Powell, OH 43065",
+    "address": "1650 Abbotsford Green Dr, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1219,7 +1219,7 @@
     "year_built": 1985
 },
 {
-    "aspanress": "5060 Canterbury Dr, Powell, OH 43065",
+    "address": "5060 Canterbury Dr, Powell, OH 43065",
     "bathrooms": 7.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1242,7 +1242,7 @@
     "year_built": 2008
 },
 {
-    "aspanress": "2080 Carriage Rd, Powell, OH 43065",
+    "address": "2080 Carriage Rd, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1265,7 +1265,7 @@
     "year_built": 1980
 },
 {
-    "aspanress": "6755 Merchant Rd, Delaware, OH 43015",
+    "address": "6755 Merchant Rd, Delaware, OH 43015",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Delaware",
@@ -1288,7 +1288,7 @@
     "year_built": 1990
 },
 {
-    "aspanress": "8479 Grennan Woods, Powell, OH 43065",
+    "address": "8479 Grennan Woods, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1311,7 +1311,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "10036 Lavenham Cir W, Powell, OH 43065",
+    "address": "10036 Lavenham Cir W, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -1334,7 +1334,7 @@
     "year_built": 2002
 },
 {
-    "aspanress": "18 Sycamore Ridge Dr, Powell, OH 43065",
+    "address": "18 Sycamore Ridge Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1357,7 +1357,7 @@
     "year_built": 1991
 },
 {
-    "aspanress": "1630 Strathshire Hall Pl, Powell, OH 43065",
+    "address": "1630 Strathshire Hall Pl, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1380,7 +1380,7 @@
     "year_built": 1987
 },
 {
-    "aspanress": "4087 Harvest Point Dr, Powell, OH 43065",
+    "address": "4087 Harvest Point Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1403,7 +1403,7 @@
     "year_built": 2016
 },
 {
-    "aspanress": "905 Retreat Ln, Powell, OH 43065",
+    "address": "905 Retreat Ln, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1426,7 +1426,7 @@
     "year_built": 1979
 },
 {
-    "aspanress": "937 Vauxhill Ln, Powell, OH 43065",
+    "address": "937 Vauxhill Ln, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1449,7 +1449,7 @@
     "year_built": 1989
 },
 {
-    "aspanress": "710 Hawksbury Way, Powell, OH 43065",
+    "address": "710 Hawksbury Way, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1472,7 +1472,7 @@
     "year_built": 2001
 },
 {
-    "aspanress": "1288 Sherborne Ln, Powell, OH 43065",
+    "address": "1288 Sherborne Ln, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1495,7 +1495,7 @@
     "year_built": 1998
 },
 {
-    "aspanress": "4323 Village Club Dr, Powell, OH 43065",
+    "address": "4323 Village Club Dr, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1518,7 +1518,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "5199 Stratford Ave, Powell, OH 43065",
+    "address": "5199 Stratford Ave, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1541,7 +1541,7 @@
     "year_built": 1992
 },
 {
-    "aspanress": "4311 Scioto Pkwy, Powell, OH 43065",
+    "address": "4311 Scioto Pkwy, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1564,7 +1564,7 @@
     "year_built": 2003
 },
 {
-    "aspanress": "4512 Fox Path Ct, Powell, OH 43065",
+    "address": "4512 Fox Path Ct, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1587,7 +1587,7 @@
     "year_built": 2010
 },
 {
-    "aspanress": "8523 Misty Woods Cir, Powell, OH 43065",
+    "address": "8523 Misty Woods Cir, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1610,7 +1610,7 @@
     "year_built": 2001
 },
 {
-    "aspanress": "6039 S Section Line Rd, Delaware, OH",
+    "address": "6039 S Section Line Rd, Delaware, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Delaware",
@@ -1633,7 +1633,7 @@
     "year_built": 1988
 },
 {
-    "aspanress": "8514 Northbluff Ln, Powell, OH 43065",
+    "address": "8514 Northbluff Ln, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1656,7 +1656,7 @@
     "year_built": 2003
 },
 {
-    "aspanress": "6790 Kellogg Dr, Powell, OH 43065",
+    "address": "6790 Kellogg Dr, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1679,7 +1679,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "7873 Gateway Ln, Powell, OH 43065",
+    "address": "7873 Gateway Ln, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1702,7 +1702,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "3891 Foresta Grand Dr, Powell, OH 43065",
+    "address": "3891 Foresta Grand Dr, Powell, OH 43065",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -1725,7 +1725,7 @@
     "year_built": 2013
 },
 {
-    "aspanress": "9345 Baytree Dr, Powell, OH",
+    "address": "9345 Baytree Dr, Powell, OH",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1748,7 +1748,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "9785 Kingston Cir, Powell, OH 43065",
+    "address": "9785 Kingston Cir, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1771,7 +1771,7 @@
     "year_built": 2012
 },
 {
-    "aspanress": "9485 Waterford Dr, Powell, OH",
+    "address": "9485 Waterford Dr, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -1794,7 +1794,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7956 Coldwater Dr, Powell, OH 43065",
+    "address": "7956 Coldwater Dr, Powell, OH 43065",
     "bathrooms": 2.5,
     "bedrooms": 3,
     "city": "Powell",
@@ -1817,7 +1817,7 @@
     "year_built": 2003
 },
 {
-    "aspanress": "5021 Sheffield Ave, Powell, OH 43065",
+    "address": "5021 Sheffield Ave, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1840,7 +1840,7 @@
     "year_built": 1999
 },
 {
-    "aspanress": "8037 Hillingdon Dr, Powell, OH 43065",
+    "address": "8037 Hillingdon Dr, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -1863,7 +1863,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "4442 Hunters Bnd, Powell, OH 43065",
+    "address": "4442 Hunters Bnd, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1886,7 +1886,7 @@
     "year_built": 2005
 },
 {
-    "aspanress": "2618 Triple Crown Xing, Powell, OH 43065",
+    "address": "2618 Triple Crown Xing, Powell, OH 43065",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -1909,7 +1909,7 @@
     "year_built": 2015
 },
 {
-    "aspanress": "4181 Bishopsgate Way, Powell, OH 43065",
+    "address": "4181 Bishopsgate Way, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -1932,7 +1932,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "Continental Plan, Heathers at Golf Village North",
+    "address": "Continental Plan, Heathers at Golf Village North",
     "bathrooms": 2.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1955,7 +1955,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Stony Bluff Dr LOT 5464, Powell, OH 43065",
+    "address": "Stony Bluff Dr LOT 5464, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -1978,7 +1978,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "113 Brookehill Dr, Powell, OH 43065",
+    "address": "113 Brookehill Dr, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2001,7 +2001,7 @@
     "year_built": 2018
 },
 {
-    "aspanress": "4333 Quail Ldg, Powell, OH",
+    "address": "4333 Quail Ldg, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2024,7 +2024,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7849 Cook Rd, Powell, OH 43065",
+    "address": "7849 Cook Rd, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -2047,7 +2047,7 @@
     "year_built": 1999
 },
 {
-    "aspanress": "7408 Avendale Dr, Powell, OH 43065",
+    "address": "7408 Avendale Dr, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2070,7 +2070,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "26 Watson Way, Powell, OH 43065",
+    "address": "26 Watson Way, Powell, OH 43065",
     "bathrooms": 2.5,
     "bedrooms": 4,
     "city": "Powell",
@@ -2093,7 +2093,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "4367 Hickory Rock Dr, Powell, OH 43065",
+    "address": "4367 Hickory Rock Dr, Powell, OH 43065",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2116,7 +2116,7 @@
     "year_built": 2004
 },
 {
-    "aspanress": "5127 Canterbury Dr, Powell, OH 43065",
+    "address": "5127 Canterbury Dr, Powell, OH 43065",
     "bathrooms": 6.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -2139,7 +2139,7 @@
     "year_built": 2003
 },
 {
-    "aspanress": "Rocky Ridge Dr LOT 5859, Powell, OH 43065",
+    "address": "Rocky Ridge Dr LOT 5859, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2162,7 +2162,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "1591 Villa Way, Powell, OH",
+    "address": "1591 Villa Way, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2185,7 +2185,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Pasture Ridge Dr LOT 5589, Powell, OH 43065",
+    "address": "Pasture Ridge Dr LOT 5589, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2208,7 +2208,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "3044 Stony Bluff Dr, Powell, OH",
+    "address": "3044 Stony Bluff Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2231,7 +2231,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "10153 Chelton Wood, Powell, OH 43065",
+    "address": "10153 Chelton Wood, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2254,7 +2254,7 @@
     "year_built": 1999
 },
 {
-    "aspanress": "5607 Liberty Rd N, Powell, OH 43065",
+    "address": "5607 Liberty Rd N, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -2277,7 +2277,7 @@
     "year_built": 2000
 },
 {
-    "aspanress": "Belfort Plan, Carpenters Mill",
+    "address": "Belfort Plan, Carpenters Mill",
     "bathrooms": 3.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -2300,7 +2300,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Dover Plan, Harvest Point",
+    "address": "Dover Plan, Harvest Point",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2323,7 +2323,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Coming Soon Plan, The Courtyards at Clear Creek",
+    "address": "Coming Soon Plan, The Courtyards at Clear Creek",
     "bathrooms": null,
     "bedrooms": null,
     "city": "Delaware",
@@ -2346,7 +2346,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4321 Quail Ldg, Powell, OH",
+    "address": "4321 Quail Ldg, Powell, OH",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -2369,7 +2369,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5810 Landgate Dr, Powell, OH",
+    "address": "5810 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2392,7 +2392,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "9423 Waterford Dr, Powell, OH",
+    "address": "9423 Waterford Dr, Powell, OH",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2415,7 +2415,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7792 Bachman Dr, Powell, OH",
+    "address": "7792 Bachman Dr, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2438,7 +2438,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4411 Quail Ldg, Powell, OH",
+    "address": "4411 Quail Ldg, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2461,7 +2461,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4822 Hunters Bend Ct, Powell, OH",
+    "address": "4822 Hunters Bend Ct, Powell, OH",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -2484,7 +2484,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4189 Quail Lndg, Powell, OH",
+    "address": "4189 Quail Lndg, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2507,7 +2507,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "1552 Villa Way, Powell, OH",
+    "address": "1552 Villa Way, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2530,7 +2530,7 @@
     "year_built": 2018
 },
 {
-    "aspanress": "5551 Whitestone Trce, Powell, OH",
+    "address": "5551 Whitestone Trce, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2553,7 +2553,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Bexley Plan, Clarkshaw Meadows",
+    "address": "Bexley Plan, Clarkshaw Meadows",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2576,7 +2576,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Strasbourg Plan, Carpenters Mill",
+    "address": "Strasbourg Plan, Carpenters Mill",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2599,7 +2599,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4847 Hunters Bend Ct, Powell, OH",
+    "address": "4847 Hunters Bend Ct, Powell, OH",
     "bathrooms": 5.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2622,7 +2622,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Monterey Plan, Harvest Point",
+    "address": "Monterey Plan, Harvest Point",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2645,7 +2645,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7622 Gateway Ln, Powell, OH",
+    "address": "7622 Gateway Ln, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2668,7 +2668,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Bourges Plan, Carpenters Mill",
+    "address": "Bourges Plan, Carpenters Mill",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2691,7 +2691,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4308 Quail Ldg, Powell, OH",
+    "address": "4308 Quail Ldg, Powell, OH",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2714,7 +2714,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7862 Bachman Dr, Powell, OH",
+    "address": "7862 Bachman Dr, Powell, OH",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -2737,7 +2737,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Fremont Plan, Clarkshaw Meadows",
+    "address": "Fremont Plan, Clarkshaw Meadows",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2760,7 +2760,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Concord Rd, Powell, OH 43065",
+    "address": "Concord Rd, Powell, OH 43065",
     "bathrooms": null,
     "bedrooms": null,
     "city": "Powell",
@@ -2783,7 +2783,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "4844 Hunters Bend Ct, Powell, OH",
+    "address": "4844 Hunters Bend Ct, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2806,7 +2806,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Spruce II Plan, Harvest Point",
+    "address": "Spruce II Plan, Harvest Point",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2829,7 +2829,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Charleston Plan, Clark Shaw Moors",
+    "address": "Charleston Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2852,7 +2852,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Dover Plan, Clark Shaw Moors",
+    "address": "Dover Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2875,7 +2875,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Bexley Plan, Clarkshaw Meadows",
+    "address": "Bexley Plan, Clarkshaw Meadows",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -2898,7 +2898,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Eastman Plan, Clarkshaw Moors",
+    "address": "Eastman Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2921,7 +2921,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Barclay Plan, Clark Shaw Moors",
+    "address": "Barclay Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2944,7 +2944,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Alder Plan, Harvest Point",
+    "address": "Alder Plan, Harvest Point",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -2967,7 +2967,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4822 Hunters Bend Ct, Powell, OH",
+    "address": "4822 Hunters Bend Ct, Powell, OH",
     "bathrooms": 5.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -2990,7 +2990,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7254 Goldenrod Ct, Powell, OH",
+    "address": "7254 Goldenrod Ct, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3013,7 +3013,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Linden Plan, Harvest Point",
+    "address": "Linden Plan, Harvest Point",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3036,7 +3036,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Abbeyville Plan, Heathers at Golf Village North",
+    "address": "Abbeyville Plan, Heathers at Golf Village North",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -3059,7 +3059,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Alder Plan, Clark Shaw Moors",
+    "address": "Alder Plan, Clark Shaw Moors",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3082,7 +3082,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5772 Landgate Dr, Powell, OH",
+    "address": "5772 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3105,7 +3105,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Mercer Plan, Heathers at Golf Village North",
+    "address": "Mercer Plan, Heathers at Golf Village North",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3128,7 +3128,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Rockingham Plan, Clark Shaw Moors",
+    "address": "Rockingham Plan, Clark Shaw Moors",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3151,7 +3151,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Lyon Plan, Carpenters Mill",
+    "address": "Lyon Plan, Carpenters Mill",
     "bathrooms": 3.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -3174,7 +3174,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4321 Quail Ldg, Powell, OH",
+    "address": "4321 Quail Ldg, Powell, OH",
     "bathrooms": 2.0,
     "bedrooms": 2,
     "city": "Powell",
@@ -3197,7 +3197,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4345 Quail Ldg, Powell, OH",
+    "address": "4345 Quail Ldg, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3220,7 +3220,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Worthington Plan, Clarkshaw Moors",
+    "address": "Worthington Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3243,7 +3243,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5821 Landgate Dr, Powell, OH",
+    "address": "5821 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3266,7 +3266,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "1372 Dogwood Loop, Powell, OH",
+    "address": "1372 Dogwood Loop, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3289,7 +3289,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Hilliard Plan, Clarkshaw Meadows",
+    "address": "Hilliard Plan, Clarkshaw Meadows",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3312,7 +3312,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Dartmouth Plan, Clarkshaw Moors",
+    "address": "Dartmouth Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3335,7 +3335,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5798 Landgate Dr, Powell, OH",
+    "address": "5798 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3358,7 +3358,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4316 Quail Ldg, Powell, OH",
+    "address": "4316 Quail Ldg, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3381,7 +3381,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Dearborn Plan, Clarkshaw Meadows",
+    "address": "Dearborn Plan, Clarkshaw Meadows",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3404,7 +3404,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Madison Plan, Clarkshaw Moors",
+    "address": "Madison Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3427,7 +3427,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Richmond Plan, Clark Shaw Moors",
+    "address": "Richmond Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3450,7 +3450,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4415 Ruppert Trl, Powell, OH",
+    "address": "4415 Ruppert Trl, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3473,7 +3473,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Riverside Plan, Clarkshaw Meadows",
+    "address": "Riverside Plan, Clarkshaw Meadows",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3496,7 +3496,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4564 Bobwhite Trce, Powell, OH",
+    "address": "4564 Bobwhite Trce, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3519,7 +3519,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "3972 Bradford Ct, Powell, OH 43065",
+    "address": "3972 Bradford Ct, Powell, OH 43065",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3542,7 +3542,7 @@
     "year_built": 2016
 },
 {
-    "aspanress": "Granville Plan, Clarkshaw Moors",
+    "address": "Granville Plan, Clarkshaw Moors",
     "bathrooms": 2.5,
     "bedrooms": 4,
     "city": "Powell",
@@ -3565,7 +3565,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Redwood Plan, Harvest Point",
+    "address": "Redwood Plan, Harvest Point",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3588,7 +3588,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4333 Bobwhite Trce, Powell, OH",
+    "address": "4333 Bobwhite Trce, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3611,7 +3611,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Fordham Plan, Clarkshaw Moors",
+    "address": "Fordham Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3634,7 +3634,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Linden Plan, Clark Shaw Moors",
+    "address": "Linden Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3657,7 +3657,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Emory Plan, Clarkshaw Moors",
+    "address": "Emory Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3680,7 +3680,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "6711 Rocky Ridge Dr, Powell, OH",
+    "address": "6711 Rocky Ridge Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3703,7 +3703,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Linwood Plan, Heathers at Golf Village North",
+    "address": "Linwood Plan, Heathers at Golf Village North",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3726,7 +3726,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4516 Bobwhite Trce, Powell, OH",
+    "address": "4516 Bobwhite Trce, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3749,7 +3749,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "4525 Bobwhite Trce, Powell, OH",
+    "address": "4525 Bobwhite Trce, Powell, OH",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3772,7 +3772,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "4338 Quail Ldg, Powell, OH",
+    "address": "4338 Quail Ldg, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3795,7 +3795,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Findlay Plan, Clarkshaw Meadows",
+    "address": "Findlay Plan, Clarkshaw Meadows",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3818,7 +3818,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "7820 Bachman Dr, Powell, OH",
+    "address": "7820 Bachman Dr, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 5,
     "city": "Powell",
@@ -3841,7 +3841,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Bradford Plan, Harvest Point",
+    "address": "Bradford Plan, Harvest Point",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3864,7 +3864,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Bucknell Plan, Clarkshaw Moors",
+    "address": "Bucknell Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -3887,7 +3887,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5717 Landgate Dr, Powell, OH",
+    "address": "5717 Landgate Dr, Powell, OH",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3910,7 +3910,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "5592 Whitestone Trce, Powell, OH",
+    "address": "5592 Whitestone Trce, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3933,7 +3933,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Rockingham Plan, Harvest Point",
+    "address": "Rockingham Plan, Harvest Point",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3956,7 +3956,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Citadel Plan, Clarkshaw Moors",
+    "address": "Citadel Plan, Clarkshaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -3979,7 +3979,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "6673 Rocky Ridge Dr, Powell, OH",
+    "address": "6673 Rocky Ridge Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -4002,7 +4002,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "5682 Landgate Dr, Powell, OH",
+    "address": "5682 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4025,7 +4025,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Redwood Plan, Clark Shaw Moors",
+    "address": "Redwood Plan, Clark Shaw Moors",
     "bathrooms": 4.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -4048,7 +4048,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Spruce Plan, Clark Shaw Moors",
+    "address": "Spruce Plan, Clark Shaw Moors",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4071,7 +4071,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Ashland Plan, Clark Shaw Moors",
+    "address": "Ashland Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -4094,7 +4094,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Ashland Plan, Clarkshaw Meadows",
+    "address": "Ashland Plan, Clarkshaw Meadows",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4117,7 +4117,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5708 Landgate Dr, Powell, OH",
+    "address": "5708 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4140,7 +4140,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "5670 Landgate Dr, Powell, OH",
+    "address": "5670 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -4163,7 +4163,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "5584 Landgate Dr, Powell, OH",
+    "address": "5584 Landgate Dr, Powell, OH",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",
@@ -4186,7 +4186,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "4446 Bobwhite Trce, Powell, OH",
+    "address": "4446 Bobwhite Trce, Powell, OH",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4209,7 +4209,7 @@
     "year_built": -1
 },
 {
-    "aspanress": "Newberry Plan, Heathers at Golf Village North",
+    "address": "Newberry Plan, Heathers at Golf Village North",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4232,7 +4232,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "4371 Quail Ldg, Powell, OH",
+    "address": "4371 Quail Ldg, Powell, OH",
     "bathrooms": 2.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4255,7 +4255,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Erie Plan, Clarkshaw Meadows",
+    "address": "Erie Plan, Clarkshaw Meadows",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4278,7 +4278,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Kenton Plan, Clark Shaw Moors",
+    "address": "Kenton Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 3,
     "city": "Powell",
@@ -4301,7 +4301,7 @@
     "year_built": 2019
 },
 {
-    "aspanress": "Arbor Plan, Clark Shaw Moors",
+    "address": "Arbor Plan, Clark Shaw Moors",
     "bathrooms": 3.0,
     "bedrooms": 4,
     "city": "Powell",

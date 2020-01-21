@@ -59,7 +59,7 @@
     left: 50%;
   }
   
-  /* Aspan arrows to the left container (pointing right) */
+  /* Add arrows to the left container (pointing right) */
   .left::before {
     content: " ";
     height: 0;
@@ -73,7 +73,7 @@
     border-color: transparent transparent transparent white;
   }
   
-  /* Aspan arrows to the right container (pointing left) */
+  /* Add arrows to the right container (pointing left) */
   .right::before {
     content: " ";
     height: 0;
