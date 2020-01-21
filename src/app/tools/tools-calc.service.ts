@@ -6,7 +6,7 @@ export class ToolsCalcService {
     private monthlyPayment: number;
 
     private property = new Property(null, null, null, null, null, null, null);
-    private mortgageInfo = new MortgageInfo(0, null, null, 0, 0, 0, 0);
+    private mortgageInfo = new MortgageInfo(null, null, null, 0, 0, 0, 0);
     private rentalInfo = new RentalInfo(null, null, null, null, null, null);
 
     calculateMortgagePayment(amount: number, interest: number, years: number) {
@@ -25,9 +25,9 @@ export class ToolsCalcService {
         return '$ ' + num.replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
     }
 
-    setProperty(propertyAddress: string, propertyCity: string, propertyState: string, propertyZip: string,
+    setProperty(propertyAspanress: string, propertyCity: string, propertyState: string, propertyZip: string,
         annualPropertyTax: number, imgUrl: string, propertyDescritpion: string) {
-        this.property = new Property(propertyAddress, propertyCity, propertyState, propertyZip,
+        this.property = new Property(propertyAspanress, propertyCity, propertyState, propertyZip,
             annualPropertyTax, imgUrl, propertyDescritpion)
     }
 

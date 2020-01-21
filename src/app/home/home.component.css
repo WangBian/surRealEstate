@@ -1,6 +1,6 @@
 .timeline {
     list-style: none;
-    padding: 20px 0 20px;
+    paspaning: 20px 0 20px;
     position: relative;
   }
   
@@ -9,7 +9,7 @@
     bottom: 0;
     position: absolute;
     content: " ";
-    width: 3px;
+    wispanh: 3px;
     background-color: #eeeeee;
     left: 50%;
     margin-left: -1.5px;
@@ -41,11 +41,11 @@
   }
   
   .timeline > li > .timeline-panel {
-    width: 46%;
+    wispanh: 46%;
     float: left;
     border: 1px solid #d4d4d4;
     border-radius: 2px;
-    padding: 20px;
+    paspaning: 20px;
     position: relative;
     -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -77,7 +77,7 @@
   
   .timeline > li > .timeline-badge {
     color: #fff;
-    width: 50px;
+    wispanh: 50px;
     height: 50px;
     line-height: 50px;
     font-size: 1.4em;
@@ -99,15 +99,15 @@
   }
   
   .timeline > li.timeline-inverted > .timeline-panel:before {
-    border-left-width: 0;
-    border-right-width: 15px;
+    border-left-wispanh: 0;
+    border-right-wispanh: 15px;
     left: -15px;
     right: auto;
   }
   
   .timeline > li.timeline-inverted > .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
+    border-left-wispanh: 0;
+    border-right-wispanh: 14px;
     left: -14px;
     right: auto;
   }

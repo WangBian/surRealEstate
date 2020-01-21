@@ -81,7 +81,7 @@ export class RentalPropertyCalcComponent implements OnInit {
   }
 
   setAnnualPropertyTaxes(event: any) {
-    this.annualPropertyTaxes = event.target.value;
+    this.annualPropertyTaxes = Number(Number(event.target.value));
   }
 
   setPropertyDescription(event: any) {
@@ -89,55 +89,55 @@ export class RentalPropertyCalcComponent implements OnInit {
   }
 
   setAaskingPrice(event: any) {
-    this.askingPrice = event.target.value;
+    this.askingPrice = Number(Number(event.target.value));
   }
 
   setAfterRepairValue(event: any) {
-    this.afterRepairValue = event.target.value;
+    this.afterRepairValue = Number(event.target.value);
   }
 
   setRepairCost(event: any) {
-    this.repairCost = event.target.value;
+    this.repairCost = Number(event.target.value);
   }
 
   setDownPayment(event: any) {
-    this.downPayment = event.target.value;
+    this.downPayment = Number(event.target.value);
   }
 
   setMortgagePeriod(event: any) {
-    this.mortgagePeriod = event.target.value;
+    this.mortgagePeriod = Number(event.target.value);
   }
 
   setInterestRate(event: any) {
-    this.interestRate = event.target.value;
+    this.interestRate = Number(event.target.value);
   }
 
   setClosingCost(event: any) {
-    this.closingCost = event.target.value;
+    this.closingCost = Number(event.target.value);
   }
 
   setMonthlyRent(event: any) {
-    this.monthlyRent = event.target.value;
+    this.monthlyRent = Number(event.target.value);
   }
 
   setMonthlyInsurance(event: any) {
-    this.monthlyInsurance = event.target.value;
+    this.monthlyInsurance = Number(event.target.value);
   }
 
   setMaintenane(event: any) {
-    this.maintenance = event.target.value;
+    this.maintenance = Number(event.target.value);
   }
 
   setCapEx(event: any) {
-    this.capEx = event.target.value;
+    this.capEx = Number(event.target.value);
   }
 
   setVacancyRate(event: any) {
-    this.vacancy = event.target.value;
+    this.vacancy = Number(event.target.value);
   }
 
   setManagement(event: any) {
-    this.management = event.target.value;
+    this.management = Number(event.target.value);
   }
 
   calculateMonthlyMortgagePayment() {

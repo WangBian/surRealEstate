@@ -1,14 +1,6 @@
 .title {
   color: grey;
 }
-dd {
-  float: left;
-  margin-right: 5rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-dt {
-  float: right;
-  margin-top: 0;
-  margin-bottom: 0;
+ul {
+  list-style-type: none;
 }

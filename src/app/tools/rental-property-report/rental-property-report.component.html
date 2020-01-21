@@ -1,16 +1,15 @@
 <header class="wide heading bg-dark text-light">
-    <h1>Result page in construction...</h1>
+    <h1>Report page in construction...</h1>
 </header>
 <br>
 <br>
 <div class="container">
-    <div class="row">
-        <div class="col-sm col-xs-12">
+    <div class="row" style="margin-left: 2rem; margin-right: 1rem">
+        <div class="col-sm col-xs-12 p-1">
             <h4>{{property.address}}, {{property.city}}, {{property.state}} {{property.zip}}</h4>
         </div>
     </div>
-    <br>
-    <div class="row">
+    <div class="row" style="margin-left: 2rem; margin-right: 1rem">
         <div class="col-sm-2 col-xs-12 text-center p-1">
             <a routerLink="/tools/rental-property-calc" class="btn-sm btn-dark btn-block text-light float-left p-1">Edit
                 Report</a>
@@ -21,43 +20,113 @@
     </div>
     <hr>
     <div class="row">
-        <ul class="col-sm-3 col-xs-12">
-            <h5>{{mortgageInfo.price}}</h5>
-            <p class="title">PURCHASE PRICE</p>
-        </ul>
+        <div class="col-sm-4 col-xs-12">
+            <ul class="col-sm-12 col-xs-12">
+                <li>
+                    <h5>{{purchasePrice}}</h5>
+                    <p class="title">PURCHASE PRICE</p>
+                </li>
+            </ul>
+
+            <span><br></span>
+
+            <ul class="col-sm-12 col-xs-12">
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Purchase Closing Cost</span>
+                    <span class="col-sm-6 col-xs-12 p-0"><strong
+                            class="float-right">{{purchaseClosingCost}}</strong></span>
+                </li>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Estimated Repairs</span>
+                    <span class="col-sm-2 col-xs-12 p-0"><strong
+                            class="float-right">{{estimatedRepairCost}}</strong></span>
+                </li>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Total Project Cost</span>
+                    <span class="col-sm-2 col-xs-12 p-0"><strong
+                            class="float-right">{{totalProjectCost}}</strong></span>
+                </li>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">After Repair Value</span>
+                    <span class="col-sm-2 col-xs-12 p-0"><strong
+                            class="float-right">{{afterRepairValue}}</strong></span>
+                </li>
+            </ul>
+
+            <ul class="col-sm-12 col-xs-12">
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Down Payment</span>
+                    <span class="col-sm-6 col-xs-12 p-0"><strong
+                            class="float-right">{{downPayment}}</strong></span>
+                </li>
+                <span class="title col-sm-6 col-xs-12 p-0">Loan Amount</span>
+                <span class="col-sm-6 col-xs-12 p-0"><strong
+                        class="float-right">{{loanAmount}}</strong></span>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Loan Period</span>
+                    <span class="col-sm-6 col-xs-12 p-0"><strong
+                            class="float-right">{{loanPeriod}}</strong></span>
+                </li>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Loan Interest Rate</span>
+                    <span class="col-sm-6 col-xs-12 p-0"><strong
+                            class="float-right">{{loanInterestRate}}</strong></span>
+                </li>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Monthly P&I</span>
+                    <span class="col-sm-6 col-xs-12 p-0"><strong
+                            class="float-right">{{monthlyPI}}</strong></span>
+                </li>
+                <li>
+                    <span class="title col-sm-6 col-xs-12 p-0">Total Cash Needed</span>
+                    <span class="col-sm-6 col-xs-12 p-0"><strong class="float-right">{{totalCashNeeded}}</strong></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm col-xs-12">
+            <div class="row pl-3">
+                <ul class="col-sm col-xs-12">
+                    <li>
+                        <h5>{{monthlyIncome}}</h5>
+                        <p class="title"><small>MONTHLY INCOME</small></p>
+                    </li>
+                    <li>
+                        <h5>{{NOI}}</h5>
+                        <p class="title"><small>NOI</small></p>
+                    </li>
+                </ul>
+                <ul class="col-sm col-xs-12">
+                    <li>
+                        <h5>{{monthlyExpenses}}</h5>
+                        <p class="title"><small>MONTHLY EXPENSES</small></p>
+                    </li>
+                    <li>
+                        <h5>{{totalCashNeeded}}</h5>
+                        <p class="title"><small>TOTAL CASH NEEDED</small></p>
+                    </li>
+                </ul>
+                <ul class="col-sm col-xs-12">
+                    <li>
+                        <h5>{{monthlyCashflow}}</h5>
+                        <p class="title"><small>MONTHLY CASHFLOW</small></p>
+                    </li>
+                    <li>
+                        <h5>{{ROI}}</h5>
+                        <p class="title"><small>CASH ON CASH ROI</small></p>
+                    </li>
+                </ul>
+                <ul class="col-sm col-xs-12">
+                    <li>
+                        <h5>{{proFormaCap}}</h5>
+                        <p class="title"><small>PRO FORMA CAP</small></p>
+                    </li>
+                    <li>
+                        <h5>{{purchaseCapRate}}</h5>
+                        <p class="title"><small>PURCHASE CAP RATE</small></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <br>
-    <div class="row">
-        <dl class="row col-sm-4 col-xs-12">
-            <dd class="title col-sm-7 col-xs-7">Purchase Closing Cost</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">Estimated Repairs</dd>
-            <dt class="col-sm-2 col-xs-12">{{mortgageInfo.repairCost}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">After Repair Value</dd>
-            <dt class="col-sm-2 col-xs-12">{{mortgageInfo.afterRepairValue}}</dt>
-        </dl>
-    </div>
-    <br>
-    <div class="row">
-        <dl class="row col-sm-4 col-xs-12">
-            <dd class="title col-sm-7 col-xs-7">Down Payment</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">Loan Amount</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">Loan Period</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.mortgagePeriod}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">Loan Interest Rate</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.interestRate}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">Monthly P&I</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
-
-            <dd class="title col-sm-7 col-xs-12">Total Cash Needed</dd>
-            <dt class="col-sm-2 col-xs-2">{{mortgageInfo.closingCost}}</dt>
-        </dl>
-    </div>
+</div>
