@@ -71,7 +71,13 @@ export class RentalPropertyReportComponent implements OnInit {
     this.monthlyCashflow = this.toolsCalcService.toCurrency(this.cashflow.toFixed(2));
 
     this.ROI = (this.cashflow * 12 / totalInvestment * 100).toFixed(2)+'%';
-  }
+
+    var NOI = (this.rentalInfo.monthlyRent - monthlyExpenses + this.monthlyMortgagePayment) * 12;
+    this.NOI = this.toolsCalcService.toCurrency(NOI.toFixed(2));
+    
+    this.proFormaCap = (NOI / this.mortgageInfo.afterRepairValue * 100).toFixed(2) + '%';
+    this.purchaseCapRate = (NOI / this.mortgageInfo.price * 100).toFixed(2) + '%';
+   }
 
   downloadPDF() {
 
