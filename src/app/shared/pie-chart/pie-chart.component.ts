@@ -37,7 +37,7 @@ export class PieChartComponent implements OnInit {
     this.pieChartLabels.push("Repair: " + this.toolsCalcService.toCurrency(repair.toFixed(2)));
     this.pieChartLabels.push("Insurance: " + this.toolsCalcService.toCurrency(insurance.toFixed(2)));
     this.pieChartLabels.push("Insurance: " + this.toolsCalcService.toCurrency(propertyTaxes.toFixed(2)));
-    this.pieChartLabels.push("Insurance: " + this.toolsCalcService.toCurrency(monthlyPI.toFixed(2)));
+    this.pieChartLabels.push("P&I: " + this.toolsCalcService.toCurrency(monthlyPI.toFixed(2)));
 
     this.pieChartData.push(vacancy);
     this.pieChartData.push(capEx);
