@@ -4,12 +4,12 @@
 <br>
 <br>
 <div class="container">
-    <div class="row" style="margin-left: 2rem; margin-right: 1rem">
+    <div class="row" style="margin-left: 2rem; margin-right: 2rem">
         <div class="col-sm col-xs-12 p-1">
             <h4>{{property.address}}, {{property.city}}, {{property.state}} {{property.zip}}</h4>
         </div>
     </div>
-    <div class="row" style="margin-left: 2rem; margin-right: 1rem">
+    <div class="row" style="margin-left: 2rem; margin-right: 2rem">
         <div class="col-sm-2 col-xs-12 text-center p-1">
             <a routerLink="/tools/rental-property-calc" class="btn-sm btn-dark btn-block text-light float-left p-1">Edit
                 Report</a>
@@ -130,10 +130,10 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-sm-5 col-xs-12">
-
+                <div class="col-sm-6 col-xs-12 p-0">
+                    <app-pie-chart></app-pie-chart>
                 </div>
-                <div class="col-sm col-xs-12">
+                <div class="col-sm col-xs-12 p-0">
                     <ul>
                         <li>
                             <span>Total operating expense:</span>
