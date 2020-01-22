@@ -37,6 +37,7 @@ export class RentalPropertyReportComponent implements OnInit {
   NOI: string;
   ROI: string;
   purchaseCapRate: string;
+  totalOperationExpenses: string;
 
   constructor(private toolsCalcService: ToolsCalcService) { }
 
@@ -65,19 +66,21 @@ export class RentalPropertyReportComponent implements OnInit {
     this.totalCashNeeded = this.toolsCalcService.toCurrency(totalInvestment.toFixed(2));
 
     this.monthlyIncome = this.toolsCalcService.toCurrency(this.rentalInfo.monthlyRent.toFixed(2));
-    var monthlyExpenses = (this.property.annualPropertyTax/12) + this.monthlyMortgagePayment + (this.rentalInfo.capEx + this.rentalInfo.maintenance + this.rentalInfo.vacancy + this.rentalInfo.management) * this.rentalInfo.monthlyRent / 100 + this.rentalInfo.monthlyInsurance;
+    var monthlyExpenses = (this.property.annualPropertyTax / 12) + this.monthlyMortgagePayment + (this.rentalInfo.capEx + this.rentalInfo.maintenance + this.rentalInfo.vacancy + this.rentalInfo.management) * this.rentalInfo.monthlyRent / 100 + this.rentalInfo.monthlyInsurance;
     this.monthlyExpenses = this.toolsCalcService.toCurrency(monthlyExpenses.toFixed(2));
     this.cashflow = this.rentalInfo.monthlyRent - monthlyExpenses;
     this.monthlyCashflow = this.toolsCalcService.toCurrency(this.cashflow.toFixed(2));
 
-    this.ROI = (this.cashflow * 12 / totalInvestment * 100).toFixed(2)+'%';
+    this.ROI = (this.cashflow * 12 / totalInvestment * 100).toFixed(2) + '%';
 
     var NOI = (this.rentalInfo.monthlyRent - monthlyExpenses + this.monthlyMortgagePayment) * 12;
     this.NOI = this.toolsCalcService.toCurrency(NOI.toFixed(2));
-    
+
     this.proFormaCap = (NOI / this.mortgageInfo.afterRepairValue * 100).toFixed(2) + '%';
     this.purchaseCapRate = (NOI / this.mortgageInfo.price * 100).toFixed(2) + '%';
-   }
+
+    this.totalOperationExpenses = this.toolsCalcService.toCurrency((monthlyExpenses - this.monthlyMortgagePayment).toFixed(2));
+  }
 
   downloadPDF() {
 

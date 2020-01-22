@@ -130,22 +130,24 @@
             </div>
             <br>
             <div class="row">
-                <div class="col-sm-6 col-xs-12 p-0">
-                    <app-pie-chart></app-pie-chart>
-                </div>
-                <div class="col-sm col-xs-12 p-0">
+                <div class="col-sm-4 col-xs-12 p-0">
                     <ul>
                         <li>
-                            <span>Total operating expense:</span>
-                            <span class="float-right"></span>
+                            <span class="col-sm col-xs-12 p-0">Total operating expense:</span>
+                            <span class="col-sm col-xs-12 p-0 float-right">{{totalOperationExpenses}}</span>
                         </li>
                         <li>
-                            <span>Mortgage expenses:</span>
-                            <span class="float-rtight">{{monthlyPI}}</span>
+                            <span class="col-sm col-xs-12 p-0">Mortgage expenses:</span>
+                            <span class="col-sm col-xs-12 p-0 float-right">{{monthlyPI}}</span>
                         </li>
                     </ul>
+                </div>
+                <div class="col-sm-8 col-xs-12 p-0">
+                    <app-pie-chart></app-pie-chart>
                 </div>
             </div>
         </div>
     </div>
+    <hr>
+    
 </div>
