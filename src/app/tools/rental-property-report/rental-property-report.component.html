@@ -4,7 +4,7 @@
 <br>
 <br>
 <div class="container">
-    <div class="row" style="margin-left: 2rem; margin-right: 2rem">
+    <div class="row sticky-top bg-white" style="margin-left: 2rem; margin-right: 2rem">
         <div class="col-sm col-xs-12 p-1">
             <h4>{{property.address}}, {{property.city}}, {{property.state}} {{property.zip}}</h4>
         </div>
@@ -15,7 +15,7 @@
                 Report</a>
         </div>
         <div class="col-sm-2 col-xs-12 text-center p-1">
-            <a routerLink="#" class="btn-sm btn-dark btn-block text-light float-left">Download PDF</a>
+            <a routerLink="#" class="btn-sm btn-dark btn-block text-light float-left" (click)="generatePDF()">Download PDF</a>
         </div>
     </div>
     <hr>
@@ -149,5 +149,5 @@
         </div>
     </div>
     <hr>
-    
+
 </div>

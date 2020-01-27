@@ -3,7 +3,9 @@ import { MortgageInfo } from '../shared/mortgageInfo.model';
 import { ToolsCalcService } from './../tools-calc.service';
 import { Component, OnInit } from '@angular/core';
 import { Property } from '../shared/property.model';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import pdfMake from 'pdfmake/build/pdfmake';
+import pdfFonts from 'pdfmake/build/vfs_fonts';
+pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
 @Component({
   selector: 'app-rental-property-report',
@@ -82,8 +84,9 @@ export class RentalPropertyReportComponent implements OnInit {
     this.totalOperationExpenses = this.toolsCalcService.toCurrency((monthlyExpenses - this.monthlyMortgagePayment).toFixed(2));
   }
 
-  downloadPDF() {
-
+  generatePDF() {
+    const documentDefinition = { content: 'This is an sample PDF printed with pdfMake' };
+    pdfMake.createPdf(documentDefinition).download("Rental_Property_Analysis_Report.pdf");
   }
 
 }
