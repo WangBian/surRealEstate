@@ -99,7 +99,7 @@ export class RentalPropertyReportComponent implements OnInit {
       const contentDataURL = canvas.toDataURL('image/png', 1.0);
       const pdf = new jspdf('p', 'pt', 'letter');
       pdf.addImage(contentDataURL, 'PNG', 10, 40, imgWidth, imgHeight);
-      pdf.save('RPA' + this.property.address +'.pdf');
+      pdf.save('RPA-' + this.property.address +'.pdf');
     });
 
   }
