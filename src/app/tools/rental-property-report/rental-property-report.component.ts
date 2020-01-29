@@ -3,9 +3,11 @@ import { MortgageInfo } from '../shared/mortgageInfo.model';
 import { ToolsCalcService } from './../tools-calc.service';
 import { Component, OnInit } from '@angular/core';
 import { Property } from '../shared/property.model';
-import pdfMake from 'pdfmake/build/pdfmake';
-import pdfFonts from 'pdfmake/build/vfs_fonts';
-pdfMake.vfs = pdfFonts.pdfMake.vfs;
+//import * as pdfMake from 'pdfmake/build/pdfmake';
+//import * as pdfFonts from 'pdfmake/build/vfs_fonts';
+import * as jspdf from 'jspdf';
+import html2canvas from 'html2canvas';
+
 
 @Component({
   selector: 'app-rental-property-report',
@@ -85,8 +87,21 @@ export class RentalPropertyReportComponent implements OnInit {
   }
 
   generatePDF() {
-    const documentDefinition = { content: 'This is an sample PDF printed with pdfMake' };
-    pdfMake.createPdf(documentDefinition).download("Rental_Property_Analysis_Report.pdf");
+
+    //const documentDefinition = html2canvas(document.getElementById('rentalPropertyReport'));
+    //pdfMake.createPdf(documentDefinition).open("Rental_Property_Analysis_Report.pdf");
+    const documentDefinition = document.getElementById('rentalPropertyReport');
+    html2canvas(documentDefinition).then(canvas => {
+      const imgWidth = 612;
+      //const pageHeight = 295;
+      const imgHeight = canvas.height * imgWidth / canvas.width;
+      //const heightLeft = imgHeight;
+      const contentDataURL = canvas.toDataURL('image/png', 1.0);
+      const pdf = new jspdf('p', 'pt', 'letter');
+      pdf.addImage(contentDataURL, 'PNG', 10, 40, imgWidth, imgHeight);
+      pdf.save('RPA' + this.property.address +'.pdf');
+    });
+
   }
 
 }

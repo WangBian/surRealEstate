@@ -1,9 +1,8 @@
 import { Property } from './../shared/property.model';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ToolsCalcService } from '../tools-calc.service';
-import { toBase64String } from '@angular/compiler/src/output/source_map';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { throwError } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-rental-property-calc',
@@ -16,7 +15,7 @@ export class RentalPropertyCalcComponent implements OnInit {
   propertyCity: string;
   propertyState: string;
   propertyZip: string;
-  imgUrl = '';
+  propertyPhoto: string;
   propertyDescritpion: string;
   annualPropertyTaxes: number;
   askingPrice: number;
@@ -33,7 +32,7 @@ export class RentalPropertyCalcComponent implements OnInit {
   vacancy: number;
   management: number;
 
-  constructor(private toolsCalcService: ToolsCalcService) { }
+  constructor(private toolsCalcService: ToolsCalcService, private http: HttpClient) { }
 
   ngOnInit() {
     this.propertyAddress = this.toolsCalcService.getProperty().address;
@@ -41,7 +40,7 @@ export class RentalPropertyCalcComponent implements OnInit {
     this.propertyState = this.toolsCalcService.getProperty().state;
     this.propertyZip = this.toolsCalcService.getProperty().zip;
     this.annualPropertyTaxes = this.toolsCalcService.getProperty().annualPropertyTax;
-    this.imgUrl = this.toolsCalcService.getProperty().photo;
+    this.propertyPhoto = this.toolsCalcService.getProperty().photo;
     this.propertyDescritpion = this.toolsCalcService.getProperty().description;
 
     this.askingPrice = this.toolsCalcService.getMortgageInfo().price;
@@ -76,8 +75,19 @@ export class RentalPropertyCalcComponent implements OnInit {
     this.propertyZip = event.target.value;
   }
 
-  setImgUrl(event: any) {
-    this.imgUrl = event.target.value;
+  setPropertyPhoto(event: any) {
+    this.propertyPhoto = event.target.value;
+    /*
+    if (event.target.files[0]) {
+      this.propertyPhoto = event.target.files[0];
+      const formData = new FormData();
+      formData.append('image', this.propertyPhoto);
+      this.http.post('http://localhost:4200/tools/rental-property-calc',formData)
+        .subscribe(res => {
+          console.log(res);
+        });
+    }
+    */
   }
 
   setAnnualPropertyTaxes(event: any) {
@@ -148,7 +158,7 @@ export class RentalPropertyCalcComponent implements OnInit {
   calculate() {
     if (this.validateForm()) {
       this.toolsCalcService.setProperty(this.propertyAddress, this.propertyCity, this.propertyState, this.propertyZip,
-        this.annualPropertyTaxes, this.imgUrl, this.propertyDescritpion);
+        this.annualPropertyTaxes, this.propertyPhoto, this.propertyDescritpion);
       this.toolsCalcService.setMortgageInfo(this.askingPrice, this.repairCost, this.afterRepairValue,
         this.downPayment, this.mortgagePeriod, this.interestRate, this.closingCost);
       this.toolsCalcService.setRentalInfo(this.monthlyRent, this.monthlyInsurance, this.maintenance,

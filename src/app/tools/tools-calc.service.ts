@@ -26,9 +26,9 @@ export class ToolsCalcService {
     }
 
     setProperty(propertyAddress: string, propertyCity: string, propertyState: string, propertyZip: string,
-        annualPropertyTax: number, imgUrl: string, propertyDescritpion: string) {
+        annualPropertyTax: number, propertyPhoto: string, propertyDescritpion: string) {
         this.property = new Property(propertyAddress, propertyCity, propertyState, propertyZip,
-            annualPropertyTax, imgUrl, propertyDescritpion)
+            annualPropertyTax, propertyPhoto, propertyDescritpion)
     }
 
     getProperty() {
