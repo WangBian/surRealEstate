@@ -87,7 +87,6 @@ export class RentalPropertyReportComponent implements OnInit {
   }
 
   generatePDF() {
-
     //const documentDefinition = html2canvas(document.getElementById('rentalPropertyReport'));
     //pdfMake.createPdf(documentDefinition).open("Rental_Property_Analysis_Report.pdf");
     const documentDefinition = document.getElementById('rentalPropertyReport');
@@ -97,8 +96,8 @@ export class RentalPropertyReportComponent implements OnInit {
       const imgHeight = canvas.height * imgWidth / canvas.width;
       //const heightLeft = imgHeight;
       const contentDataURL = canvas.toDataURL('image/png', 1.0);
-      const pdf = new jspdf('p', 'pt', 'letter');
-      pdf.addImage(contentDataURL, 'PNG', 10, 40, imgWidth, imgHeight);
+      const pdf = new jspdf('l', 'pt', 'letter');
+      pdf.addImage(contentDataURL, 'PNG', 80, 40, imgWidth, imgHeight);
       pdf.save('RPA-' + this.property.address +'.pdf');
     });
 

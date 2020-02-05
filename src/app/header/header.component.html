@@ -6,13 +6,17 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent"> 
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" routerLinkActive="active">
             <li class="nav-item">
                 <a class="nav-link" routerLink="home">HOME</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="tools">TOOLS</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link" routerLink="tools" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TOOLS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="tools/mortgage-calc" class="nav-link">Mortgage Calculator</a></li>
+                    <li><a href="tools/rental-property-calc" class="nav-link">Rental Property Calculator</a></li>
+                </ul>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="properties">PROPERTIES</a>
@@ -27,7 +31,7 @@
                 <a class="nav-link" routerLink="home">CONTACTS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="home">ABOUT US</a>
+                <a class="nav-link" routerLink="aboutus">ABOUT US</a>
             </li>
         </ul>
     </div>

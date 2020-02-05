@@ -15,6 +15,7 @@ import { RentalPropertyReportComponent } from './tools/rental-property-report/re
 import { PieChartComponent } from './shared/pie-chart/pie-chart.component';
 import { ToolsCalcService } from './tools/tools-calc.service';
 import { MortgageCalcComponent } from './tools/mortgage-calc/mortgage-calc.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MortgageCalcComponent } from './tools/mortgage-calc/mortgage-calc.compo
     PageNotFoundComponent,
     PropertiesComponent,
     RentalPropertyReportComponent,
-    PieChartComponent
+    PieChartComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,
