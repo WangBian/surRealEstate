@@ -63,8 +63,8 @@ app.post("/api/journals", function (req, res) {
     var newJournal = req.body;
     newJournal.createDate = new Date();
 
-    if (!req.body.name) {
-        handleError(res, "Invalid user input", "Must provide a name.", 400);
+    if (!req.body.title) {
+        handleError(res, "Invalid user input", "Must provide a title.", 400);
     } else {
         db.collection(JOURNALS_COLLECTION).insertOne(newJournal, function (err, doc) {
             if (err) {
