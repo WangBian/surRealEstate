@@ -25,7 +25,7 @@ export class JournalsComponent implements OnInit {
     });
   }
 
-  private getIndexOfContact = (journalId: String) => {
+  private getIndexOfJournal = (journalId: String) => {
     return this.journals.findIndex((journal) => {
       return journal._id === journalId;
     });
@@ -43,6 +43,6 @@ export class JournalsComponent implements OnInit {
     };
 
     // By default, a newly-created journal will have the selected state.
-    this.selectContact(journal);
+    this.selectJournal(journal);
   }
 }
