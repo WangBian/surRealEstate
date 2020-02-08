@@ -8,6 +8,18 @@ var ObjectID = mongodb.ObjectID;
 var app = express();
 app.use(bodyParser.json());
 
+// Create link to Angular build directory
+var distDir = __dirname + "/dist/surRealEstate";
+app.use(express.static(distDir));
+
+/*
+        // Serve only the static files form the dist directory
+        app.use(express.static(process.cwd() + '/dist/surRealEstate'));
+        app.get('/*', function (req, res) {
+            res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+        });
+*/
+
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
 mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://bianwssr:19941992srl!@ds061731.mlab.com:61731/heroku_2tsj8l2w",
@@ -23,11 +35,6 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://bianwssr:19941
         // Save database object from the callback for reuse.
         db = client.db();
         console.log("Database connection ready");
-        // Serve only the static files form the dist directory
-        app.use(express.static(process.cwd() + '/dist/surRealEstate'));
-        app.get('/*', function (req, res) {
-            res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
-        });
 
         // Initialize the app.
         var server = app.listen(process.env.PORT || 8080, function () {
