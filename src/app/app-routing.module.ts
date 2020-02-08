@@ -1,3 +1,4 @@
+import { JournalsComponent } from './journals/journals.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { RentalPropertyReportComponent } from './tools/rental-property-report/rental-property-report.component';
 import { PropertiesComponent } from './properties/properties.component';
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'tools', component: ToolsComponent },
   { path: 'properties', component: PropertiesComponent},
+  { path: 'journals', component: JournalsComponent},
   { path: 'aboutus', component: AboutusComponent },
   {
     path: '',

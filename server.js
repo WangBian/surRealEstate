@@ -61,7 +61,7 @@ function handleError(res, reason, message, code) {
 app.get("/api/journals", function (req, res) {
     db.collection(JOURNALS_COLLECTION).find({}).toArray(function (err, docs) {
         if (err) {
-            handleError(res, err.message, "Failed to get contacts.");
+            handleError(res, err.message, "Failed to get journals.");
         } else {
             res.status(200).json(docs);
         }
@@ -77,7 +77,7 @@ app.post("/api/journals", function (req, res) {
     } else {
         db.collection(JOURNALS_COLLECTION).insertOne(newJournal, function (err, doc) {
             if (err) {
-                handleError(res, err.message, "Failed to create new contact.");
+                handleError(res, err.message, "Failed to create new journal.");
             } else {
                 res.status(201).json(doc.ops[0]);
             }
