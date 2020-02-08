@@ -5,6 +5,8 @@ var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 
+var JOURNALS_COLLECTION = "journals";
+
 var app = express();
 app.use(bodyParser.json());
 
