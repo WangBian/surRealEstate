@@ -31,7 +31,7 @@ export class JournalsComponent implements OnInit {
     });
   }
 
-  selectContact(journal: Journal) {
+  selectJournal(journal: Journal) {
     this.selectedJournal = journal;
   }
 
