@@ -2,7 +2,7 @@
     <div class="col-md-5">
         <h2>Journals</h2>
         <ul class="list-group">
-            <li class="list-group-item" *ngFor="let journal of Journals" (click)="selectJournal(journal)"
+            <li class="list-group-item" *ngFor="let journal of journals" (click)="selectJournal(journal)"
                 [class.active]="journal === selectedJournal">
                 {{journal.title}}
             </li>
