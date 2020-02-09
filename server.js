@@ -59,7 +59,7 @@ function handleError(res, reason, message, code) {
  *    POST: creates a new journal
  */
 
-app.get("/api/journals", function (req, res) {
+app.get("/api/GetJournals", function (req, res) {
     db.collection(JOURNALS_COLLECTION).find({}).toArray(function (err, docs) {
         if (err) {
             handleError(res, err.message, "Failed to get journals.");

@@ -1,3 +1,4 @@
+import { JournalService } from './journals/journal.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -39,7 +40,7 @@ import { JournalsComponent } from './journals/journals.component';
     ChartsModule,
     HttpClientModule
   ],
-  providers: [ToolsCalcService],
+  providers: [ToolsCalcService, JournalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

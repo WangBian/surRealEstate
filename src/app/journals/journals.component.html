@@ -1,16 +1,23 @@
-<div class="row">
-    <div class="col-md-5">
-        <h2>Journals</h2>
-        <ul class="list-group">
-            <li class="list-group-item" *ngFor="let journal of journals" (click)="selectJournal(journal)"
-                [class.active]="journal === selectedJournal">
-                {{journal.title}}
-            </li>
-        </ul>
-        <button class="btn btn-warning" (click)="createNewJournal()">New</button>
-    </div>
-    <div class="col-md-5 col-md-offset-2">
-        <!--
+<header class="wide heading bg-dark text-light">
+    <h2>Real Estate Investment Journals</h2>
+</header>
+
+<br />
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <h2>Journals</h2>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let journal of journals" (click)="selectJournal(journal)"
+                    [class.active]="journal === selectedJournal">
+                    {{journal.title}}
+                </li>
+            </ul>
+            <button class="btn btn-warning" (click)="createNewJournal()">New</button>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+            <!--
       <contact-details
         [contact]="selectedContact"
         [createHandler]="addContact"
@@ -18,5 +25,8 @@
         [deleteHandler]="deleteContact">
       </contact-details>
       -->
+        </div>
     </div>
 </div>
+
+<router-outlet></router-outlet>

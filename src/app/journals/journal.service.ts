@@ -1,6 +1,5 @@
 import { Journal } from './journal.model';
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
@@ -13,7 +12,7 @@ export class JournalService {
     getJouranls(): Promise<void | Journal[]> {
         return this.http.get(this.journalsUrl)
             .toPromise()
-            .then(response => response as Journal[])
+            .then(response => console.log(response))
             .catch(this.handleError);
     }
 
