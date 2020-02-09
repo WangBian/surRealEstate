@@ -13,11 +13,28 @@ app.use(bodyParser.json());
 // Create link to Angular build directory
 var distDir = __dirname + "/dist/surRealEstate";
 app.use(express.static(distDir));
-/*
-app.get('/*', function (req, res) {
+
+app.get('/home', function (req, res) {
     res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
 });
-*/
+app.get('/tools', function (req, res) {
+    res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+});
+app.get('/tools/mortgage-calc', function (req, res) {
+    res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+});
+app.get('/tools/rental-property-calc', function (req, res) {
+    res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+});
+app.get('/properties', function (req, res) {
+    res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+});
+app.get('/journals', function (req, res) {
+    res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+});
+app.get('/aboutus', function (req, res) {
+    res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
+});
 
 /*
         // Serve only the static files form the dist directory
