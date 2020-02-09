@@ -13,9 +13,11 @@ app.use(bodyParser.json());
 // Create link to Angular build directory
 var distDir = __dirname + "/dist/surRealEstate";
 app.use(express.static(distDir));
+/*
 app.get('/*', function (req, res) {
     res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
 });
+*/
 
 /*
         // Serve only the static files form the dist directory

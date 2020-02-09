@@ -12,7 +12,7 @@ export class JournalService {
     getJouranls(): Promise<void | Journal[]> {
         return this.http.get(this.journalsUrl)
             .toPromise()
-            .then(response => console.log(response))
+            .then(response => response as Journal[])
             .catch(this.handleError);
     }
 
