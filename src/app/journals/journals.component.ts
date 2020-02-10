@@ -19,8 +19,8 @@ export class JournalsComponent implements OnInit {
       this.journals = journals.map((journal) => {
         if (!journal.title) {
           journal.title = '';
-          journal.createDate = new Date(journal.createDate.toLocaleDateString());
         }
+        journal.createDate = new Date(journal.createDate.toLocaleDateString());
         return journal;
       });
     });
