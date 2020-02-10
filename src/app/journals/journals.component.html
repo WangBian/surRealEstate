@@ -10,27 +10,19 @@
             <button class="btn btn-dark btn-block" (click)="createNewJournal()">New</button>
         </div>
     </div>
+    <hr>
     <div class="row">
-        <div class="col-md-5">
-            <ul class="list-group">
-                <li class="list-group-item" *ngFor="let journal of journals" (click)="selectJournal(journal)"
-                    [class.active]="journal === selectedJournal">
-                    {{journal.title}}
-                    {{journal.createDate}}
-                    {{journal.description}}
-                </li>
-            </ul>
-
-        </div>
-        <div class="col-md-5 col-md-offset-2">
-            <!--
-      <contact-details
-        [contact]="selectedContact"
-        [createHandler]="addContact"
-        [updateHandler]="updateContact"
-        [deleteHandler]="deleteContact">
-      </contact-details>
-      -->
+        <div class="col-md-12" *ngFor="let journal of journals" (click)="selectJournal(journal)"
+            [class.active]="journal === selectedJournal">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{journal.title}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{journal.createDate}}</h6>
+                    <p class="card-text">{{journal.description}}</p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
