@@ -38,7 +38,6 @@ export class JournalsComponent implements OnInit {
   createNewJournal() {
     var journal: Journal = {
       title: '',
-      date: new Date(),
       description: ''
     };
 
