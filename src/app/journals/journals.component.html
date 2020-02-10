@@ -6,15 +6,21 @@
 <br />
 <div class="container">
     <div class="row">
+        <div class="col-sm-2 col-xs-12">
+            <button class="btn btn-dark btn-block" (click)="createNewJournal()">New</button>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-5">
-            <h2>Journals</h2>
             <ul class="list-group">
                 <li class="list-group-item" *ngFor="let journal of journals" (click)="selectJournal(journal)"
                     [class.active]="journal === selectedJournal">
                     {{journal.title}}
+                    {{journal.createDate}}
+                    {{journal.description}}
                 </li>
             </ul>
-            <button class="btn btn-warning" (click)="createNewJournal()">New</button>
+
         </div>
         <div class="col-md-5 col-md-offset-2">
             <!--
