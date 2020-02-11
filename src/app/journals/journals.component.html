@@ -9,14 +9,14 @@
         <div class="col-sm">
             <form>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="journalTitle" [(ngModel)]="journal.title"
+                    <input type="text" class="form-control" name="journalTitle" [(ngModel)]="newJournal.title"
                         placeholder="Title">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" name="exampleFormControlTextarea1" [(ngModel)]="journal.description"
+                    <textarea class="form-control" name="exampleFormControlTextarea1" [(ngModel)]="newJournal.description"
                         rows="5" placeholder="Description"></textarea>
                 </div>
-                <button class="btn btn-dark col-sm-2" (click)="createNewJournal(journal)">Post</button>
+                <button class="btn btn-dark col-sm-2" (click)="createNewJournal(newJournal)">Post</button>
             </form>
         </div>
     </div>

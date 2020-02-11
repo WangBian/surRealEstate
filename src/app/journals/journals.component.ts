@@ -9,7 +9,7 @@ import { Journal } from './journal.model';
 })
 export class JournalsComponent implements OnInit {
 
-  journal: Journal;
+  newJournal: Journal;
   journals: Journal[];
   selectedJournal: Journal;
 
