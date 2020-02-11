@@ -1,5 +1,5 @@
 import { JournalService } from './journal.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Journal } from './journal.model';
 
 @Component({
@@ -11,9 +11,6 @@ export class JournalsComponent implements OnInit {
 
   journals: Journal[];
   selectedJournal: Journal;
-
-  @Input()
-  createHandler: Function;
 
   constructor(private jouralService: JournalService) { }
 
@@ -40,9 +37,7 @@ export class JournalsComponent implements OnInit {
   }
 
   createNewJournal(journal: Journal) {
-    this.jouralService.createJournal(journal).then((newJournal: Journal) => {
-      this.createHandler(newJournal);
-    });
+    this.jouralService.createJournal(journal);
 
     // By default, a newly-created journal will have the selected state.
     this.selectJournal(journal);

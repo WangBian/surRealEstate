@@ -18,6 +18,7 @@ import { ToolsCalcService } from './tools/tools-calc.service';
 import { MortgageCalcComponent } from './tools/mortgage-calc/mortgage-calc.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { JournalsComponent } from './journals/journals.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { JournalsComponent } from './journals/journals.component';
     BrowserModule,
     AppRoutingModule,
     ChartsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ToolsCalcService, JournalService],
   bootstrap: [AppComponent]
