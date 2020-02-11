@@ -17,8 +17,8 @@ export class JournalService {
     }
 
     // post("/api/contacts")
-    createContact(newContact: Journal): Promise<void | Journal> {
-        return this.http.post(this.journalsUrl, newContact)
+    createJournal(newJournal: Journal): Promise<void | Journal> {
+        return this.http.post(this.journalsUrl, newJournal)
             .toPromise()
             .then(response => response as Journal)
             .catch(this.handleError);

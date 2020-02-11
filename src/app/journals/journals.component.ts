@@ -12,10 +12,13 @@ export class JournalsComponent implements OnInit {
   journals: Journal[];
   selectedJournal: Journal;
 
-  constructor(private jouralSerice: JournalService) { }
+  @Input()
+  createHandler: Function;
+
+  constructor(private jouralService: JournalService) { }
 
   ngOnInit() {
-    this.jouralSerice.getJouranls().then((journals: Journal[]) => {
+    this.jouralService.getJouranls().then((journals: Journal[]) => {
       this.journals = journals.map((journal) => {
         if (!journal.title) {
           journal.title = '';
@@ -36,11 +39,10 @@ export class JournalsComponent implements OnInit {
     this.selectedJournal = journal;
   }
 
-  createNewJournal() {
-    var journal: Journal = {
-      title: '',
-      description: ''
-    };
+  createNewJournal(journal: Journal) {
+    this.jouralService.createJournal(journal).then((newJournal: Journal) => {
+      this.createHandler(newJournal);
+    });
 
     // By default, a newly-created journal will have the selected state.
     this.selectJournal(journal);
