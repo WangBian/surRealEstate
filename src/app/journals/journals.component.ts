@@ -20,7 +20,7 @@ export class JournalsComponent implements OnInit {
         if (!journal.title) {
           journal.title = '';
         }
-        journal.createDate = new Date(journal.createDate.toLocaleDateString());
+        journal.createDate = new Date(journal.createDate.toDateString());
         return journal;
       });
     });

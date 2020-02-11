@@ -6,20 +6,28 @@
 <br />
 <div class="container">
     <div class="row">
-        <div class="col-sm-2 col-xs-12">
-            <button class="btn btn-dark btn-block" (click)="createNewJournal()">New</button>
+        <div class="col-sm">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="journalTitle" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                        placeholder="Description"></textarea>
+                </div>
+                <button class="btn btn-dark col-sm-2" (click)="createNewJournal()">Post</button>
+            </form>
         </div>
     </div>
     <hr>
     <div class="row">
-        <div class="col-md-12" *ngFor="let journal of journals" (click)="selectJournal(journal)"
+        <div class="col-md-12 pb-1" *ngFor="let journal of journals" (click)="selectJournal(journal)"
             [class.active]="journal === selectedJournal">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">{{journal.title}}</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Created on {{journal.createDate}}</h6>
                     <p class="card-text">{{journal.description}}</p>
-                    <button class="btn btn-dark pull-right" (click)="createNewJournal()">Delete</button>
                 </div>
             </div>
         </div>
