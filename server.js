@@ -6,6 +6,7 @@ var mongodb = require("mongodb");
 var ObjectID = mongodb.ObjectID;
 
 var JOURNALS_COLLECTION = "journals";
+var PROPERTIES_COLLECTION = "properties";
 
 var app = express();
 app.use(bodyParser.json());
@@ -36,11 +37,6 @@ app.get('/aboutus', function (req, res) {
     res.sendFile(path.join(process.cwd() + '/dist/surRealEstate/index.html'));
 });
 
-/*
-        // Serve only the static files form the dist directory
-        app.use(express.static(process.cwd() + '/dist/surRealEstate'));
-        
-*/
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
@@ -103,4 +99,18 @@ app.post("/api/journals", function (req, res) {
             }
         });
     }
+});
+
+/*  "/api/properties"
+ *    GET: finds all properties
+ */
+
+app.get("/api/properties", function (req, res) {
+    db.collection(PROPERTIES_COLLECTION).find({}).toArray(function (err, docs) {
+        if (err) {
+            handleError(res, err.message, "Failed to get properties.");
+        } else {
+            res.status(200).json(docs);
+        }
+    });
 });
