@@ -79,7 +79,7 @@ function handleError(res, reason, message, code) {
  */
 
 app.get("/api/journals", function (req, res) {
-    db.collection(JOURNALS_COLLECTION).find({}).sort({'CreateDate': 1}).toArray(function (err, docs) {
+    db.collection(JOURNALS_COLLECTION).find({}).sort({'CreateDate': -1}).toArray(function (err, docs) {
         if (err) {
             handleError(res, err.message, "Failed to get journals.");
         } else {
