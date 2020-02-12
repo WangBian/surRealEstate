@@ -39,8 +39,9 @@ export class JournalsComponent implements OnInit {
 
   createNewJournal(journal: Journal) {
     this.jouralService.createJournal(journal);
-
+    
     // By default, a newly-created journal will have the selected state.
     this.selectJournal(journal);
+    location.reload();
   }
 }
