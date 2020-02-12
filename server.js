@@ -44,7 +44,7 @@ app.get('/aboutus', function (req, res) {
 
 // Create a database variable outside of the database connection callback to reuse the connection pool in your app.
 var db;
-mongodb.MongoClient.connect(process.env.MONGODB_URI || "mongodb://bianwssr:19941992srl!@ds061731.mlab.com:61731/heroku_2tsj8l2w",
+mongodb.MongoClient.connect(process.env.MONGODB_URI || "@ds061731.mlab.com:61731/heroku_2tsj8l2w",
     {
         useUnifiedTopology: true,
         useNewUrlParser: true,
