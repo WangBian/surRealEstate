@@ -45,5 +45,6 @@ export class PropertiesComponent implements OnInit {
     this.city = city;
     this.state = state;
     this.properties.filter(p => p.city === this.city && p.state === this.state);
+    console.log(this.city + " " + this.state);
   }
 }
