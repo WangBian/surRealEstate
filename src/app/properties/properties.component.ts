@@ -44,5 +44,8 @@ export class PropertiesComponent implements OnInit {
   search(city: string, state: string) {
     this.city = city;
     this.state = state;
+    this.properties.filter(
+      p => p.city === this.
+    )
   }
 }
