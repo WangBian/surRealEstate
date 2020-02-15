@@ -1,5 +1,5 @@
+import { PropertiesService } from './properties.service';
 import { Component, OnInit, Input } from '@angular/core';
-import * as properties from '../../properties.json';
 
 @Component({
   selector: 'app-properties',
@@ -11,11 +11,17 @@ export class PropertiesComponent implements OnInit {
   city: string;
   state: string;
 
-  properties: any = (properties as any).default;
+  properties: any;
+  property: any;
 
-  constructor() { }
+  constructor(private propertiesService: PropertiesService) { }
 
   ngOnInit() {
+    this.propertiesService.getJouranls().then((properties: any[]) => {
+      this.properties = properties.map((property) => {
+        return property;
+      });
+    });
   }
 
   sort(order: string) {
