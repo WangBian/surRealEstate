@@ -114,3 +114,18 @@ app.get("/api/properties", function (req, res) {
         }
     });
 });
+
+/*  "/api/properties/:city&:state"
+ *    GET: finds all properties
+ */
+
+app.get("/api/properties", function (req, res) {
+    console.log(req.param.city)
+    db.collection(PROPERTIES_COLLECTION).find({city: req.param.city, state: req.param.state }).toArray(function (err, docs) {
+        if (err) {
+            handleError(res, err.message, "Failed to get properties.");
+        } else {
+            res.status(200).json(docs);
+        }
+    });
+});

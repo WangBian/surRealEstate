@@ -7,8 +7,16 @@ export class PropertiesService {
 
     constructor(private http: HttpClient) { }
 
-    // get("/api/contacts")
-    getJouranls(): Promise<void | any[]> {
+    // get("/api/properties")
+    getAllProperties(): Promise<void | any[]> {
+        return this.http.get(this.propertiesUrl)
+            .toPromise()
+            .then(response => response as any[])
+            .catch(this.handleError);
+    }
+
+    // get("/api/properties/:city&:state")
+    getProperties(city: string, state: string): Promise<void | any[]> {
         return this.http.get(this.propertiesUrl)
             .toPromise()
             .then(response => response as any[])

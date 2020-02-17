@@ -8,7 +8,7 @@ export class JournalService {
 
     constructor(private http: HttpClient) { }
 
-    // get("/api/contacts")
+    // get("/api/journals")
     getJouranls(): Promise<void | Journal[]> {
         return this.http.get(this.journalsUrl)
             .toPromise()
@@ -16,7 +16,7 @@ export class JournalService {
             .catch(this.handleError);
     }
 
-    // post("/api/contacts")
+    // post("/api/journals")
     createJournal(newJournal: Journal): Promise<void | Journal> {
         return this.http.post(this.journalsUrl, newJournal)
             .toPromise()

@@ -17,7 +17,7 @@ export class PropertiesComponent implements OnInit {
   constructor(private propertiesService: PropertiesService) { }
 
   ngOnInit() {
-    this.propertiesService.getJouranls().then((properties: any[]) => {
+    this.propertiesService.getAllProperties().then((properties: any[]) => {
       this.properties = properties.map((property) => {
         return property;
       });
@@ -42,9 +42,10 @@ export class PropertiesComponent implements OnInit {
   }
 
   search(city: string, state: string) {
-    this.city = city;
-    this.state = state;
-    this.properties.filter(p => p.city === this.city);
-    console.log(this.city + " " + this.state);
+    this.propertiesService.getProperties(city, state).then((properties: any[]) => {
+      this.properties = properties.map((property) => {
+        return property;
+      });
+    });
   }
 }
