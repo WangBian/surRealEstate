@@ -47,6 +47,5 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
-    location.reload();
   }
 }
