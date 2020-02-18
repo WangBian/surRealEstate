@@ -18,7 +18,7 @@ export class PropertiesService {
     // get("/api/properties/:city&:state")
     getProperties(city: string, state: string): Promise<void | any[]> {
         console.log(this.propertiesUrl + '/' + city + '&' + state);
-        return this.http.get(this.propertiesUrl + '/' + city + '&' + state)
+        return this.http.get(this.propertiesUrl + '/?city=' + city + '&state=' + state)
             .toPromise()
             .then(response => response as any[])
             .catch(this.handleError);

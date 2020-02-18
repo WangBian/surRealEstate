@@ -108,7 +108,6 @@ app.post("/api/journals", function (req, res) {
  */
 
 app.get("/api/properties", function (req, res) {
-    console.log("test");
     db.collection(PROPERTIES_COLLECTION).find({}).toArray(function (err, docs) {
         if (err) {
             handleError(res, err.message, "Failed to get properties.");
@@ -123,8 +122,6 @@ app.get("/api/properties", function (req, res) {
  */
 
 app.get("/api/properties/:city&:state", function (req, res) {
-    console.log("test 1");
-    console.log(req.param.city);
     db.collection(PROPERTIES_COLLECTION).find({ city: req.param.city, state: req.param.state }).toArray(function (err, docs) {
         if (err) {
             handleError(res, err.message, "Failed to get properties.");
