@@ -47,5 +47,6 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
+    console.log(this.properties);
   }
 }
