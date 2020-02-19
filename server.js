@@ -121,7 +121,7 @@ app.get("/api/properties", function (req, res) {
  *    GET: finds all properties
  */
 
-app.get("/api/properties/:city&:state", function (req, res) {
+app.get("/api/properties/city/:city/state/:state", function (req, res) {
     db.collection(PROPERTIES_COLLECTION).find({city: req.param.city, state: req.param.state }).toArray(function (err, docs) {
         res.status(200).json({"city": req.param.city, "state": req.param.state});
         if (err) {
