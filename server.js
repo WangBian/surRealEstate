@@ -122,8 +122,8 @@ app.get("/api/properties", function (req, res) {
  */
 
 app.get("/api/properties/city/:city/state/:state", function (req, res) {
+    res.send.json({"city": req.param.city, "state": req.param.state});
     db.collection(PROPERTIES_COLLECTION).find({city: req.param.city, state: req.param.state }).toArray(function (err, docs) {
-        res.send(req.param.city);
         /*
         if (err) {
             handleError(res, err.message, "Failed to get properties.");
