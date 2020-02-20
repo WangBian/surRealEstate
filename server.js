@@ -122,14 +122,12 @@ app.get("/api/properties", function (req, res) {
  */
 
 app.get("/api/properties/city/:city/state/:state", function (req, res) {
-    res.send.json({"city": req.param.city, "state": req.param.state});
-    db.collection(PROPERTIES_COLLECTION).find({city: req.param.city, state: req.param.state }).toArray(function (err, docs) {
-        /*
+    res.send(req.params);
+    db.collection(PROPERTIES_COLLECTION).find({city: req.params.city, state: req.params.state }).toArray(function (err, docs) {
         if (err) {
             handleError(res, err.message, "Failed to get properties.");
         } else {
             res.status(200).json(docs);
         }
-        */
     });
 });
