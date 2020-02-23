@@ -71,7 +71,7 @@
     <div class="row">
         <div class="col-sm-8 col-xs-12 offset-sm-2">
             <form>
-                <div class="form-row">
+                <div class="form-row flex">
                     <div class="form-group col-sm-3 col-xs-12">
                         <label for="askingPrice">Asking Price</label>
                         <input type="number" class="form-control" id="askingPrice" value={{askingPrice}}
@@ -88,7 +88,7 @@
                             (keyup)="setAfterRepairValue($event)">
                     </div>
                 </div>
-                <div class="form-row">
+                <div class="form-row flex">
                     <div class="form-group col-sm col-xs-12">
                         <label for="downPayment">Down Payment (%)</label>
                         <input type="number" class="form-control" id="downPayment" value={{downPayment}}
@@ -119,7 +119,7 @@
     <div class="row">
         <div class="col-sm-8 col-xs-12 offset-sm-2">
             <form>
-                <div class="form-row">
+                <div class="form-row flex">
                     <div class="form-group col-sm-3 col-xs-12">
                         <label for="monthlyRent">Monthly Rent <i class="glyphicon glyphicon-info-sign"
                                 data-toggle="tooltip" data-placement="right"
@@ -127,12 +127,12 @@
                         </label>
                         <input type="number" class="form-control" id="monthlyRent" value={{monthlyRent}}
                             (keyup)="setMonthlyRent($event)">
-                        <div class="text-center">
-                            <a href="https://www.rentometer.com/" target="_blank">
-                                <img src="../assets/img/rentometer_logo_small@2x-6249303dc353efc359b942f9acad103658ea3d2e2ee617a5f3dc691e992b0eda.png"
-                                    alt="..." class="rounded img-fluid" style="width:50%">
-                            </a>
-                        </div>
+                    </div>
+                    <div class="form-group col-sm-3 col-xs-12">
+                        <a href="https://www.rentometer.com/" target="_blank">
+                            <img src="../assets/img/rentometer_logo_small@2x-6249303dc353efc359b942f9acad103658ea3d2e2ee617a5f3dc691e992b0eda.png"
+                                alt="..." class="rounded img-fluid" style="width:50%">
+                        </a>
                     </div>
                     <div class="form-group col-sm-3 col-xs-12">
                         <label for="monthlyInsurance">Monthly Insurance</label>
@@ -140,7 +140,7 @@
                             (keyup)="setMonthlyInsurance($event)">
                     </div>
                 </div>
-                <div class="form-row">
+                <div class="form-row flex">
                     <div class="form-group col-sm col-xs-12">
                         <label for="maintenance">Maintenance (%)</label>
                         <input type="number" class="form-control" id="maintenance" value={{maintenance}}
