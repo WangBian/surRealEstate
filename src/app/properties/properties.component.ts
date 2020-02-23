@@ -14,6 +14,8 @@ export class PropertiesComponent implements OnInit {
   properties: any;
   property: any;
 
+  propertiesCount: number;
+
   constructor(private propertiesService: PropertiesService) { }
 
   ngOnInit() {
@@ -22,6 +24,7 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
+    this.propertiesCount = this.properties.length;
   }
 
   sort(order: string) {
@@ -47,5 +50,6 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
+    this.propertiesCount = this.properties.length;
   }
 }
