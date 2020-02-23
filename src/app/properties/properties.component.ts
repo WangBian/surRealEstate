@@ -24,7 +24,7 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
-    this.propertiesCount = this.properties.length;
+    this.propertiesCount = Array(this.properties).length;
   }
 
   sort(order: string) {
@@ -50,6 +50,6 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
-    this.propertiesCount = this.properties.length;
+    this.propertiesCount = Array(this.properties).length;
   }
 }
