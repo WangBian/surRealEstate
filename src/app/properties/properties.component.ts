@@ -1,3 +1,4 @@
+import { Property } from './../tools/shared/property.model';
 import { PropertiesService } from './properties.service';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -11,7 +12,7 @@ export class PropertiesComponent implements OnInit {
   city: string;
   state: string;
 
-  properties: any;
+  properties: Array<any>;
   property: any;
 
   propertiesCount: number;
@@ -24,7 +25,7 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
-    this.propertiesCount = Array(this.properties).length;
+    this.propertiesCount = this.properties.length;
   }
 
   sort(order: string) {
@@ -50,6 +51,6 @@ export class PropertiesComponent implements OnInit {
         return property;
       });
     });
-    this.propertiesCount = Array(this.properties).length;
+    this.propertiesCount = this.properties.length;
   }
 }
