@@ -1,15 +1,18 @@
 <div class="wide heading bg-dark">
-    <div class="row col-md-8 justify-content-around align-items-center">
-        <div class="col-sm-3 col-xs-12 p-2">
-            <input type="text" class="form-control search-slt" placeholder="City" #inputCity>
+    <div class="container">
+        <div class="row col-md justify-content-around align-items-center">
+            <div class="col-sm-3 col-xs-12 p-2">
+                <input type="text" class="form-control search-slt" placeholder="City" #inputCity>
+            </div>
+            <div class="col-sm-3 col-xs-12 p-2">
+                <input type="text" class="form-control search-slt" placeholder="State" #inputState>
+            </div>
+            <div class="col-sm-3 col-xs-12 p-2">
+                <button type="button" class="btn btn-block btn-info"
+                    (click)="search(inputCity.value, inputState.value)">Search</button>
+            </div>
         </div>
-        <div class="col-sm-3 col-xs-12 p-2">
-            <input type="text" class="form-control search-slt" placeholder="State" #inputState>
-        </div>
-        <div class="col-sm-3 col-xs-12 p-2">
-            <button type="button" class="btn btn-block btn-info"
-                (click)="search(inputCity.value, inputState.value)">Search</button>
-        </div>
+        
     </div>
 </div>
 
@@ -38,7 +41,7 @@
                     <h6 class="card-text text-primary">Rent: {{property.rent_zestimate}}</h6>
                     <div class="card-text text-dark">
                         <p>{{property.bedrooms}} bds | {{property.bathrooms}} ba | {{property.square_footage}} sqft </p>
-                        <p>{{property.address}} {{property.postal_code}}</p>
+                        <p>{{property.address}}</p>
                     </div>
                     <div class="mt-auto">
                         <p>{{property.title}}</p>
