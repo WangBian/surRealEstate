@@ -31,7 +31,7 @@
     "html2canvas": "^1.0.0-rc.5",
     "html2canvas-proxy": "^1.0.1",
     "jquery": "^3.4.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "mongodb": "^3.5.2",
     "ng-pdf-make": "^0.1.1",
     "ng2-charts": "^2.3.0",
